@@ -2,6 +2,7 @@ import {_loadTranslation, RapidAppConfig, RapidURLMapping} from "react-rapid-app
 import {BANGLA} from "./locales/bn";
 import {ENGLISH} from "./locales/en";
 import ExampleUrlMapping from "./view/example/example-url-mapping";
+import QuranUrlMapping from "./view/quran/quran-url-mapping";
 
 export default class BaseAppBookRegistry {
 
@@ -13,5 +14,6 @@ export default class BaseAppBookRegistry {
     public static register(urlMapping: RapidURLMapping, appConfig: RapidAppConfig): void {
         this.loadTranslation()
         ExampleUrlMapping.register(urlMapping, appConfig)
+        QuranUrlMapping.register(urlMapping, appConfig)
     }
 }

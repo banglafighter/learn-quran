@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'AmiriQuran';
+    src: url('../fonts/amiriquran-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MajeedQuranic';
+    src: url('../fonts/al-majeed-quranic.ttf') format('truetype');
+}
+
+.amiri-quran {
+    font-family: 'AmiriQuran', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.majeed-quranic {
+    font-family: 'MajeedQuranic', sans-serif;
+    font-size: 40px;
+}

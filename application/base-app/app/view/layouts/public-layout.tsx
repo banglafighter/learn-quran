@@ -1,6 +1,8 @@
 import {RapidLayoutRenderer, RapidReactComponent, RapidUtil, React} from 'react-rapid-app';
 import AppBootstrap from "../common/AppBootstrap";
 import {Column, Container, Row} from "react-rapid-bootstrap";
+import ExampleUrlMapping from "../example/example-url-mapping";
+import QuranUrlMapping from "../quran/quran-url-mapping";
 
 
 interface Props {
@@ -14,7 +16,8 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
 
     getNavigation(){
         return [
-            {name: "Home", url: "#"}
+            {name: "Home", url: ExampleUrlMapping.ui.index},
+            {name: "Alphabet", url: QuranUrlMapping.ui.alphabet},
         ]
     }
 
