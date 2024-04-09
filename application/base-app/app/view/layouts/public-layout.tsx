@@ -40,7 +40,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
                     </nav>
                     <Container type={"fluid"} className={"mt-3 mb-3"}>
                         <Row>
-                            <Column span={2}>
+                            <Column spanMedium={2}>
                                 <div className="list-group">
                                     {this.getNavigation().map((row: any, index: any) => (
                                         <button
@@ -54,7 +54,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
                                     ))}
                                 </div>
                             </Column>
-                            <Column span={10}>
+                            <Column spanMedium={10}>
                                 <RapidLayoutRenderer
                                     route={route}
                                     appConfig={appConfig}

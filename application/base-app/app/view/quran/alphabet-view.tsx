@@ -108,7 +108,7 @@ export default class AlphabetView extends RapidComponent<Props, State> {
 
         return (
             <div>
-                <div className={"top-action mb-2 d-flex flex-row-reverse"}>
+                <div className={"top-action mb-2 m-2 d-flex flex-row-reverse"}>
                     <div className="btn-group" role="group">
                         <button type="button" className="btn btn-success" onClick={()=>{this.playAudio(0, "Play All", "Stop") }}>{this.state.payAllButtonLabel}</button>
                     </div>
