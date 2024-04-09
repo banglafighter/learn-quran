@@ -35,7 +35,7 @@ interface Props extends RapidProps {
 
 class State extends RapidComponentState {
     selectedRow: any
-    isStop: boolean = false
+    isStarted: boolean = false
     payAllButtonLabel: any = "Play All"
 }
 
@@ -87,7 +87,7 @@ export default class AlphabetView extends RapidComponent<Props, State> {
         const _this = this
         let data: any = this.getData()
         _this.setState({selectedRow: index})
-        if (data.length > index) {
+        if (data.length > index && this.state.isStarted) {
             _this.setState({payAllButtonLabel: stopText})
             if (data[index].audio !== "" && data[index].audio) {
                 let audio: any = new Audio(data[index].audio)
@@ -99,7 +99,7 @@ export default class AlphabetView extends RapidComponent<Props, State> {
                 _this.playAudio(index + 1, startText, stopText)
             }
         } else {
-            _this.setState({payAllButtonLabel: startText})
+            _this.setState({payAllButtonLabel: startText, isStarted: false, selectedRow: -1})
         }
     }
 
@@ -110,7 +110,16 @@ export default class AlphabetView extends RapidComponent<Props, State> {
             <div>
                 <div className={"top-action mb-2 m-2 d-flex flex-row-reverse"}>
                     <div className="btn-group" role="group">
-                        <button type="button" className="btn btn-success" onClick={()=>{this.playAudio(0, "Play All", "Stop") }}>{this.state.payAllButtonLabel}</button>
+                        <button
+                            type="button"
+                            className="btn btn-success"
+                            onClick={() => {
+                                this.state.isStarted = !this.state.isStarted
+                                this.playAudio(0, "Play All", "Stop")
+                            }}
+                        >
+                            {this.state.payAllButtonLabel}
+                        </button>
                     </div>
                 </div>
                 <Table className={"text-center"} variant={"bordered"} isHoverEffectInRow={true}>
