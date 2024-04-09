@@ -37,7 +37,7 @@ module.exports = (env) => {
                     use: ["style-loader", "css-loader"],
                 },
                 {
-                    test: /\.(png|jpe?g|gif|svg|webp)$/,
+                    test: /\.(png|jpe?g|gif|svg|webp|mp3)$/,
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
