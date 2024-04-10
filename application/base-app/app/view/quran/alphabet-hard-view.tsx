@@ -39,7 +39,7 @@ class State extends RapidComponentState {
     payAllButtonLabel: any = "Play All"
 }
 
-export default class AlphabetView extends RapidComponent<Props, State> {
+export default class AlphabetHardView extends RapidComponent<Props, State> {
 
     state: State = new State();
     static contextType = RapidAppContext
@@ -52,34 +52,33 @@ export default class AlphabetView extends RapidComponent<Props, State> {
 
     getData() {
         return [
-            {final: "ـأ", middle: "ـأ", initial: "أ", isolated: "أ", audio: alif},
             {final: "ﺐ", middle: "ـبـ", initial: "بـ", isolated: "ب", audio: ba},
-            {final: "ﺖ", middle: "ـتـ", initial: "تـ", isolated: "ت", audio: ta},
-            {final: "ـث", middle: "ـثـ", initial: "ﺛ", isolated: "ث", audio: sa},
-            {final: "ـج", middle: "ـجـ", initial: "جـ", isolated: "ج", audio: jim},
-            {final: "ـح", middle: "ـحـ", initial: "حـ", isolated: "ح", audio: ha},
-            {final: "ـخ", middle: "ـخـ", initial: "خـ", isolated: "خ", audio: kh},
-            {final: "ـد", middle: "ـد", initial: "د", isolated: "د", audio: dal},
+            {final: "ـن", middle: "ـنـ", initial: "نـ", isolated: "ن", audio: nun},
             {final: "ـذ", middle: "ـذ", initial: "ذ", isolated: "ذ", audio: jal},
+
+            {final: "ـح", middle: "ـحـ", initial: "حـ", isolated: "ح", audio: ha},
+            {final: "ـج", middle: "ـجـ", initial: "جـ", isolated: "ج", audio: jim},
+            {final: "ـخ", middle: "ـخـ", initial: "خـ", isolated: "خ", audio: kh},
+
+            {final: "ـك", middle: "ـكـ", initial: "كـ", isolated: "ك", audio: kaf},
+            {final: "ـف", middle: "ـفـ", initial: "فـ", isolated: "ف", audio: fa},
+            {final: "ـغ", middle: "ـغـ", initial: "غـ", isolated: "غ", audio: goen},
+            {final: "ـض", middle: "ـضـ", initial: "ضـ", isolated: "ض", audio: dot},
+            {final: "ـظ", middle: "ـظـ", initial: "ظـ", isolated: "ظ", audio: jo},
+
+            {final: "ـد", middle: "ـد", initial: "د", isolated: "د", audio: dal},
+            {final: "ـل", middle: "ـلـ", initial: "لـ", isolated: "ل", audio: lam},
             {final: "ـر", middle: "ـر", initial: "ر", isolated: "ر", audio: ro},
             {final: "ـز", middle: "ـز", initial: "ز", isolated: "ز", audio: ja},
-            {final: "ـس", middle: "ـسـ", initial: "سـ", isolated: "س", audio: sin},
-            {final: "ـش", middle: "ـشـ", initial: "شـ", isolated: "ش", audio: shin},
-            {final: "ـص", middle: "ـصـ", initial: "صـ", isolated: "ص", audio: sod},
-            {final: "ـض", middle: "ـضـ", initial: "ضـ", isolated: "ض", audio: dot},
-            {final: "ـط", middle: "ﻄ", initial: "طـ", isolated: "ط", audio: to},
-            {final: "ـظ", middle: "ـظـ", initial: "ظـ", isolated: "ظ", audio: jo},
-            {final: "ـع", middle: "ـعـ", initial: "عـ", isolated: "ع", audio: aen},
-            {final: "ـغ", middle: "ـغـ", initial: "غـ", isolated: "غ", audio: goen},
-            {final: "ـف", middle: "ـفـ", initial: "فـ", isolated: "ف", audio: fa},
-            {final: "ـق", middle: "ـقـ", initial: "قـ", isolated: "ق", audio: kof},
-            {final: "ـك", middle: "ـكـ", initial: "كـ", isolated: "ك", audio: kaf},
-            {final: "ـل", middle: "ـلـ", initial: "لـ", isolated: "ل", audio: lam},
-            {final: "ـم", middle: "ـمـ", initial: "مـ", isolated: "م", audio: mim},
-            {final: "ـن", middle: "ـنـ", initial: "نـ", isolated: "ن", audio: nun},
-            {final: "ـه", middle: "ـهـ", initial: "هـ", isolated: "ہ", audio: haa},
-            {final: "ـو", middle: "ـو", initial: "و", isolated: "و", audio: oyao},
+
+            {final: "ﺖ", middle: "ـتـ", initial: "تـ", isolated: "ت", audio: ta},
             {final: "ي", middle: "ـيـ", initial: "يـ", isolated: "ي", audio: ea},
+            {final: "ـق", middle: "ـقـ", initial: "قـ", isolated: "ق", audio: kof},
+
+            {final: "ـث", middle: "ـثـ", initial: "ﺛ", isolated: "ث", audio: sa},
+            {final: "ـش", middle: "ـشـ", initial: "شـ", isolated: "ش", audio: shin},
+
+
         ]
     }
 
