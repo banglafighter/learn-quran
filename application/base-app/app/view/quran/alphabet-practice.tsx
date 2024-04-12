@@ -37,7 +37,6 @@ class State extends RapidComponentState {
     selectedRow: any
     isStarted: boolean = false
     payAllButtonLabel: any = "Play All"
-    randomTableRow: any
 }
 
 export default class AlphabetPracticeView extends RapidComponent<Props, State> {
