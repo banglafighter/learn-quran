@@ -37,6 +37,7 @@ class State extends RapidComponentState {
     selectedRow: any
     isStarted: boolean = false
     payAllButtonLabel: any = "Play All"
+    randomTableRow: any
 }
 
 export default class AlphabetPracticeView extends RapidComponent<Props, State> {
@@ -45,67 +46,235 @@ export default class AlphabetPracticeView extends RapidComponent<Props, State> {
     static contextType = RapidAppContext
 
     static defaultProps = {}
+    randomData: any
+    currentlyPlayingIndex: any = 0
+    tableItemPerRow: any = 5
+    totalDataLength: any = 0
 
     constructor(props: Props) {
         super(props);
     }
 
+    componentDidMount() {
+        this.generateRandomTableRow()
+    }
+
     getData() {
         return [
-            {final: "ـأ", middle: "ـأ", initial: "أ", isolated: "أ", audio: alif},
-            {final: "ﺐ", middle: "ـبـ", initial: "بـ", isolated: "ب", audio: ba},
-            {final: "ﺖ", middle: "ـتـ", initial: "تـ", isolated: "ت", audio: ta},
-            {final: "ـث", middle: "ـثـ", initial: "ﺛ", isolated: "ث", audio: sa},
-            {final: "ـج", middle: "ـجـ", initial: "جـ", isolated: "ج", audio: jim},
-            {final: "ـح", middle: "ـحـ", initial: "حـ", isolated: "ح", audio: ha},
-            {final: "ـخ", middle: "ـخـ", initial: "خـ", isolated: "خ", audio: kh},
-            {final: "ـد", middle: "ـد", initial: "د", isolated: "د", audio: dal},
-            {final: "ـذ", middle: "ـذ", initial: "ذ", isolated: "ذ", audio: jal},
-            {final: "ـر", middle: "ـر", initial: "ر", isolated: "ر", audio: ro},
-            {final: "ـز", middle: "ـز", initial: "ز", isolated: "ز", audio: ja},
-            {final: "ـس", middle: "ـسـ", initial: "سـ", isolated: "س", audio: sin},
-            {final: "ـش", middle: "ـشـ", initial: "شـ", isolated: "ش", audio: shin},
-            {final: "ـص", middle: "ـصـ", initial: "صـ", isolated: "ص", audio: sod},
-            {final: "ـض", middle: "ـضـ", initial: "ضـ", isolated: "ض", audio: dot},
-            {final: "ـط", middle: "ﻄ", initial: "طـ", isolated: "ط", audio: to},
-            {final: "ـظ", middle: "ـظـ", initial: "ظـ", isolated: "ظ", audio: jo},
-            {final: "ـع", middle: "ـعـ", initial: "عـ", isolated: "ع", audio: aen},
-            {final: "ـغ", middle: "ـغـ", initial: "غـ", isolated: "غ", audio: goen},
-            {final: "ـف", middle: "ـفـ", initial: "فـ", isolated: "ف", audio: fa},
-            {final: "ـق", middle: "ـقـ", initial: "قـ", isolated: "ق", audio: kof},
-            {final: "ـك", middle: "ـكـ", initial: "كـ", isolated: "ك", audio: kaf},
-            {final: "ـل", middle: "ـلـ", initial: "لـ", isolated: "ل", audio: lam},
-            {final: "ـم", middle: "ـمـ", initial: "مـ", isolated: "م", audio: mim},
-            {final: "ـن", middle: "ـنـ", initial: "نـ", isolated: "ن", audio: nun},
-            {final: "ـه", middle: "ـهـ", initial: "هـ", isolated: "ہ", audio: haa},
-            {final: "ـو", middle: "ـو", initial: "و", isolated: "و", audio: oyao},
-            {final: "ي", middle: "ـيـ", initial: "يـ", isolated: "ي", audio: ea},
+            {letter: "أ", audio: alif},
+            {letter: "ـأ", audio: alif},
+
+            {letter: "ب", audio: ba},
+            {letter: "بـ", audio: ba},
+            {letter: "ـبـ", audio: ba},
+            {letter: "ﺐ", audio: ba},
+
+            {letter: "ت", audio: ta},
+            {letter: "تـ", audio: ta},
+            {letter: "ـتـ", audio: ta},
+            {letter: "ﺖ", audio: ta},
+
+            {letter: "ث", audio: sa},
+            {letter: "ﺛ", audio: sa},
+            {letter: "ـثـ", audio: sa},
+            {letter: "ـث", audio: sa},
+
+            {letter: "ج", audio: jim},
+            {letter: "جـ", audio: jim},
+            {letter: "ـجـ", audio: jim},
+            {letter: "ـج", audio: jim},
+
+            {letter: "ح", audio: ha},
+            {letter: "حـ", audio: ha},
+            {letter: "ـحـ", audio: ha},
+            {letter: "ـح", audio: ha},
+
+            {letter: "خ", audio: kh},
+            {letter: "خـ", audio: kh},
+            {letter: "ـخـ", audio: kh},
+            {letter: "ـخ", audio: kh},
+
+            {letter: "د", audio: dal},
+            {letter: "ـد", audio: dal},
+
+            {letter: "ذ", audio: jal},
+            {letter: "ـذ", audio: jal},
+
+            {letter: "ر", audio: ro},
+            {letter: "ـر", audio: ro},
+
+            {letter: "ز", audio: ja},
+            {letter: "ـز", audio: ja},
+
+            {letter: "س", audio: sin},
+            {letter: "سـ", audio: sin},
+            {letter: "ـسـ", audio: sin},
+            {letter: "ـس", audio: sin},
+
+            {letter: "ش", audio: shin},
+            {letter: "شـ", audio: shin},
+            {letter: "ـشـ", audio: shin},
+            {letter: "ـش", audio: shin},
+
+            {letter: "ص", audio: sod},
+            {letter: "صـ", audio: sod},
+            {letter: "ـصـ", audio: sod},
+            {letter: "ـص", audio: sod},
+
+            {letter: "ض", audio: dot},
+            {letter: "ضـ", audio: dot},
+            {letter: "ـضـ", audio: dot},
+            {letter: "ـض", audio: dot},
+
+            {letter: "ط", audio: to},
+            {letter: "طـ", audio: to},
+            {letter: "ﻄ", audio: to},
+            {letter: "ـط", audio: to},
+
+            {letter: "ظ", audio: jo},
+            {letter: "ظـ", audio: jo},
+            {letter: "ـظـ", audio: jo},
+            {letter: "ـظ", audio: jo},
+
+            {letter: "ع", audio: aen},
+            {letter: "عـ", audio: aen},
+            {letter: "ـعـ", audio: aen},
+            {letter: "ـع", audio: aen},
+
+            {letter: "غ", audio: goen},
+            {letter: "غـ", audio: goen},
+            {letter: "ـغـ", audio: goen},
+            {letter: "ـغ", audio: goen},
+
+            {letter: "ف", audio: fa},
+            {letter: "فـ", audio: fa},
+            {letter: "ـفـ", audio: fa},
+            {letter: "ـف", audio: fa},
+
+            {letter: "ق", audio: kof},
+            {letter: "ق", audio: kof},
+            {letter: "ـقـ", audio: kof},
+            {letter: "ـق", audio: kof},
+
+            {letter: "ك", audio: kaf},
+            {letter: "كـ", audio: kaf},
+            {letter: "ـكـ", audio: kaf},
+            {letter: "ـك", audio: kaf},
+
+            {letter: "ل", audio: lam},
+            {letter: "لـ", audio: lam},
+            {letter: "ـلـ", audio: lam},
+            {letter: "ـل", audio: lam},
+
+            {letter: "م", audio: mim},
+            {letter: "مـ", audio: mim},
+            {letter: "ـمـ", audio: mim},
+            {letter: "ـم", audio: mim},
+
+            {letter: "ن", audio: nun},
+            {letter: "نـ", audio: nun},
+            {letter: "ـنـ", audio: nun},
+            {letter: "ـن", audio: nun},
+
+            {letter: "ہ", audio: haa},
+            {letter: "هـ", audio: haa},
+            {letter: "ـهـ", audio: haa},
+            {letter: "ـه", audio: haa},
+
+            {letter: "و", audio: oyao},
+            {letter: "ـو", audio: oyao},
+
+            {letter: "ي", audio: ea},
+            {letter: "يـ", audio: ea},
+            {letter: "ـيـ", audio: ea},
         ]
     }
 
     playAudio(index: any, startText?: any, stopText?: any) {
         const _this = this
-        let data: any = this.getData()
+        let data: any = this.randomData
+        if (!data) {
+            return
+        }
+        let itemPerRowWithZeroCount: any = _this.tableItemPerRow - 1
+        if (index < (this.currentlyPlayingIndex - itemPerRowWithZeroCount) || index === undefined) {
+            if (this.currentlyPlayingIndex >= this.totalDataLength) {
+                _this.setState({payAllButtonLabel: startText, isStarted: false, selectedRow: -1})
+                return;
+            }
+            index = this.currentlyPlayingIndex + itemPerRowWithZeroCount
+            if (index >= this.totalDataLength) {
+                index = this.totalDataLength - 1
+            }
+        }
+        this.currentlyPlayingIndex++
         _this.setState({selectedRow: index})
         if (data.length > index && this.state.isStarted) {
             _this.setState({payAllButtonLabel: stopText})
             if (data[index].audio !== "" && data[index].audio) {
                 let audio: any = new Audio(data[index].audio)
                 audio.onended = () => {
-                    _this.playAudio(index + 1, startText, stopText)
+                    _this.playAudio(index - 1, startText, stopText)
                 }
                 audio.play()
             } else {
-                _this.playAudio(index + 1, startText, stopText)
+                _this.playAudio(index - 1, startText, stopText)
             }
         } else {
             _this.setState({payAllButtonLabel: startText, isStarted: false, selectedRow: -1})
         }
     }
 
+    generateRandomTableRow() {
+        const _this = this;
+        _this.randomData = _this.getData().sort(() => Math.random() - 0.5)
+        this.notifyComponentChange()
+    }
+
+    getTableRowHTML(){
+        const _this = this;
+        if (!_this.randomData) {
+            return
+        }
+        let rowHTML: any = []
+        let data: any = _this.randomData
+        let itemPerRow: any = _this.tableItemPerRow
+        let totalData: any = _this.totalDataLength = data.length
+        let numberOfRow: any = Math.ceil(totalData / itemPerRow)
+        for (let row = 0; row <= numberOfRow; row++) {
+            let maxRunRow: any = (row * itemPerRow) + itemPerRow
+            if (maxRunRow > totalData) {
+                maxRunRow = totalData
+            }
+            let cellHTML: any = []
+            let itemIndex: any = row * itemPerRow
+            for (; itemIndex < maxRunRow; itemIndex++) {
+                let dataItem: any = data[itemIndex]
+                cellHTML.push(
+                    <TableCell key={itemIndex} className={_this.state.selectedRow === itemIndex ? "table-secondary text-center" : "text-center"}>
+                        {dataItem.letter}
+                        <Button
+                            onClick={() => {
+                                let audio: any = new Audio(dataItem.audio)
+                                audio.play()
+                            }}
+                            viewSize={"small"}
+                            className={"ms-3 text-success"}
+                            variant={"light"}>
+                            <i className="fa-solid fa-play"></i>
+                        </Button>
+                    </TableCell>
+                )
+            }
+            rowHTML.push(
+                <TableRow key={itemIndex}>{cellHTML}</TableRow>
+            )
+        }
+        return rowHTML;
+    }
+
     renderUI() {
         const _this = this;
-
         return (
             <div>
                 <div className={"top-action mb-2 m-2 d-flex flex-row-reverse"}>
@@ -115,7 +284,8 @@ export default class AlphabetPracticeView extends RapidComponent<Props, State> {
                             className="btn btn-success"
                             onClick={() => {
                                 this.state.isStarted = !this.state.isStarted
-                                this.playAudio(0, "Play All", "Stop")
+                                this.currentlyPlayingIndex = 0
+                                this.playAudio( undefined, "Play All", "Stop")
                             }}
                         >
                             {this.state.payAllButtonLabel}
@@ -124,28 +294,7 @@ export default class AlphabetPracticeView extends RapidComponent<Props, State> {
                 </div>
                 <Table className={"text-center"} variant={"bordered"}>
                     <TableBody className={"majeed-quranic"}>
-                        {this.getData().map((row: any, index: any) => (
-                            <TableRow key={index} className={_this.state.selectedRow === index ? "table-secondary" : ""}>
-                                <TableCell className={"text-center table-hover"} >
-                                    {row.final}
-                                    <Button viewSize={"small"} className={"ms-3 text-success"} variant={"light"}>
-                                        <i className="fa-solid fa-play"></i>
-                                    </Button>
-                                </TableCell>
-                                <TableCell>
-                                    {row.middle}
-
-                                </TableCell>
-                                <TableCell>{row.initial}</TableCell>
-                                <TableCell>{row.isolated}</TableCell>
-                                <TableCell>
-                                    <Button onClick={() => {
-                                        let audio: any = new Audio(row.audio)
-                                        audio.play()
-                                    }}>Play</Button>
-                                </TableCell>
-                            </TableRow>
-                        ))}
+                        {_this.getTableRowHTML()}
                     </TableBody>
                 </Table>
             </div>
