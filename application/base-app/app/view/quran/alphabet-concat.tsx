@@ -20,7 +20,20 @@ import haMimKof from "../../assets/audio/alphabet/concat/ha-mim-kof.mp3"
 import eaKofJo from "../../assets/audio/alphabet/concat/ea-kof-jo.mp3"
 import shinGenLam from "../../assets/audio/alphabet/concat/shin-gen-lam.mp3"
 import lamHaSin from "../../assets/audio/alphabet/concat/lam-ha-sin.mp3"
-import alif from "../../assets/audio/alphabet/alif.mp3"
+import taLamFa from "../../assets/audio/alphabet/concat/ta-lam-fa.mp3"
+import dalKhoLam from "../../assets/audio/alphabet/concat/dal-kho-lam.mp3"
+import jalAenRo from "../../assets/audio/alphabet/concat/jal-aen-ro.mp3"
+import sodKofLam from "../../assets/audio/alphabet/concat/sod-kof-lam.mp3"
+import toRoBa from "../../assets/audio/alphabet/concat/to-ro-ba.mp3"
+import kofAenDal from "../../assets/audio/alphabet/concat/kof-aen-dal.mp3"
+import baHamjaSin from "../../assets/audio/alphabet/concat/ba-hamja-sin.mp3"
+import taAenBa from "../../assets/audio/alphabet/concat/ta-aen-ba.mp3"
+import mimTaNun from "../../assets/audio/alphabet/concat/mim-ta-nun.mp3"
+import roKafBa from "../../assets/audio/alphabet/concat/ro-kaf-ba.mp3"
+import faTaHa from "../../assets/audio/alphabet/concat/fa-ta-ha.mp3"
+import owaoSaKof from "../../assets/audio/alphabet/concat/owao-sa-kof.mp3"
+import nunSodBa from "../../assets/audio/alphabet/concat/nun-sod-ba.mp3"
+import eaDalAen from "../../assets/audio/alphabet/concat/ea-dal-aen.mp3"
 
 
 interface Props extends RapidProps {
@@ -57,41 +70,41 @@ export default class AlphabetConcatView extends RapidComponent<Props, State> {
             {letter: "جمع", audio: zimMimAen},
             {letter: "ذكر", audio: jalKafRo},
             {letter: "قري", audio: kofRoEa},
-            {letter: "تلف", audio: alif},
-            {letter: "طرب", audio: alif},
-            {letter: "ركب", audio: alif},
+            {letter: "تلف", audio: taLamFa},
+            {letter: "طرب", audio: toRoBa},
+            {letter: "ركب", audio: roKafBa},
 
             {letter: "أجذ", audio: alifZimJal},
             {letter: "حسد", audio: haSinDal},
             {letter: "عبس", audio: aenBaSin},
             {letter: "حمق", audio: haMimKof},
-            {letter: "خلق", audio: alif},
-            {letter: "قعد", audio: alif},
-            {letter: "فتح", audio: alif},
+            {letter: "خلق", audio: khoLamKof},
+            {letter: "قعد", audio: kofAenDal},
+            {letter: "فتح", audio: faTaHa},
 
             {letter: "أذن", audio: alifJalNun},
             {letter: "حشر", audio: haShinRo},
             {letter: "عدل", audio: aenDalLam},
             {letter: "يقظ", audio: eaKofJo},
-            {letter: "دخل", audio: alif},
-            {letter: "ﺑﺌﺲ", audio: alif},
-            {letter: "وثق", audio: alif},
+            {letter: "دخل", audio: dalKhoLam},
+            {letter: "ﺑﺌﺲ", audio: baHamjaSin},
+            {letter: "وثق", audio: owaoSaKof},
 
             {letter: "أمر", audio: alifMimRo},
             {letter: "خشي", audio: khoShinEa},
             {letter: "قتل", audio: kofTaLam},
             {letter: "شغل", audio: shinGenLam},
-            {letter: "ذعر", audio: alif},
-            {letter: "تعب", audio: alif},
-            {letter: "نصب", audio: alif},
+            {letter: "ذعر", audio: jalAenRo},
+            {letter: "تعب", audio: taAenBa},
+            {letter: "نصب", audio: nunSodBa},
 
             {letter: "بخل", audio: baKhoLam},
             {letter: "خلق", audio: khoLamKof},
             {letter: "شرب", audio: shinRoBa},
             {letter: "لحس", audio: lamHaSin},
-            {letter: "صقل", audio: alif},
-            {letter: "متن", audio: alif},
-            {letter: "يدع", audio: alif},
+            {letter: "صقل", audio: sodKofLam},
+            {letter: "متن", audio: mimTaNun},
+            {letter: "يدع", audio: eaDalAen},
         ]
     }
 
