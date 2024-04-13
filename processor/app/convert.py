@@ -10,11 +10,11 @@ number_to_name = {
 }
 
 import_name = ""
-path = ""
+path = "D:\\open-source\\learn-quran\\application\\base-app\\app\\assets\\audio\\fathah\single"
 for number in number_to_name:
     name = number_to_name[number]
     file_name = f"{name}-fs.mp3"
-    original_name = f"{name}.mp3"
+    original_name = f"{number}.mp3"
     import_name += f"import {name}FS from \"../../assets/audio/fathah/single/{file_name}\"\n"
 
     source_file = os.path.join(path, original_name)
