@@ -53,7 +53,7 @@ export default class AlphabetConcatView extends RapidComponent<Props, State> {
     static defaultProps = {}
     randomData: any
     currentlyPlayingIndex: any = 0
-    tableItemPerRow: any = 7
+    tableItemPerRow: any = 5
     totalDataLength: any = 0
 
     constructor(props: Props) {
