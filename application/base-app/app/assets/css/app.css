@@ -8,6 +8,11 @@
     src: url('../fonts/al-majeed-quranic.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'AlQalamQuranMajeed2';
+    src: url('../fonts/al-qalam-quran-majeed2.ttf') format('truetype');
+}
+
 .amiri-quran {
     font-family: 'AmiriQuran', sans-serif;
     font-size: 38px;
@@ -16,5 +21,10 @@
 
 .majeed-quranic {
     font-family: 'MajeedQuranic', sans-serif;
+    font-size: 38px;
+}
+
+.al-qalam-quran-majeed2 {
+    font-family: 'AlQalamQuranMajeed2', sans-serif;
     font-size: 38px;
 }

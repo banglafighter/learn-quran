@@ -21,6 +21,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
             {name: "Alphabet - Hard", url: QuranUrlMapping.ui.alphabetHard},
             {name: "Alphabet - Practice", url: QuranUrlMapping.ui.alphabetPractice},
             {name: "Alphabet - Concat", url: QuranUrlMapping.ui.alphabetConcat},
+            {name: "Jobor Jer Pesh", url: QuranUrlMapping.ui.joborJerPesh},
         ]
     }
 
@@ -70,7 +71,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
                     <footer className="footer mt-auto py-3 bg-dark">
                     <div className="container-fluid">
                             <p className="m-0 text-center text-white">
-                                Copyright &copy; Your Website 2024
+                                Copyright &copy; Bangla Fighter 2024
                             </p>
                         </div>
                     </footer>
