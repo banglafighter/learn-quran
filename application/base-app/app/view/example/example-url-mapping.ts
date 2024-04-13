@@ -2,6 +2,7 @@ import {RapidAppConfig, RapidLayoutInfoData, RapidURLMapping, React} from "react
 
 
 const IndexView = React.lazy(() => import('./index-view'));
+const TypeView = React.lazy(() => import('./type-view'));
 
 const UI_BASE_URL = "/"
 
@@ -13,6 +14,7 @@ export default class ExampleUrlMapping {
 
     public static readonly ui = {
         index: UI_BASE_URL,
+        typing: UI_BASE_URL + "typing",
     };
 
     private static privateUrlMappings(privateLayoutInfo: RapidLayoutInfoData): RapidLayoutInfoData {
@@ -21,6 +23,7 @@ export default class ExampleUrlMapping {
 
     private static publicUrlMappings(publicLayoutInfo: RapidLayoutInfoData): RapidLayoutInfoData {
         publicLayoutInfo.addPageInstance(this.ui.index, IndexView);
+        publicLayoutInfo.addPageInstance(this.ui.typing, TypeView);
         return publicLayoutInfo;
     }
 

@@ -17,6 +17,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
     getNavigation(){
         return [
             {name: "Home", url: ExampleUrlMapping.ui.index},
+            {name: "Typing", url: ExampleUrlMapping.ui.typing},
             {name: "Alphabet", url: QuranUrlMapping.ui.alphabet},
             {name: "Alphabet - Hard", url: QuranUrlMapping.ui.alphabetHard},
             {name: "Alphabet - Practice", url: QuranUrlMapping.ui.alphabetPractice},
