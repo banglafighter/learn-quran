@@ -10,12 +10,12 @@ number_to_name = {
 }
 
 import_name = ""
-path = "D:\\open-source\\learn-quran\\application\\base-app\\app\\assets\\audio\\fathah\single"
+path = "D:\\open-source\\learn-quran\\application\\base-app\\app\\assets\\audio\\kasrah\\single"
 for number in number_to_name:
     name = number_to_name[number]
-    file_name = f"{name}-fs.mp3"
+    file_name = f"{name}-ks.mp3"
     original_name = f"{number}.mp3"
-    import_name += f"import {name}FS from \"../../assets/audio/fathah/single/{file_name}\"\n"
+    import_name += f"import {name}KS from \"../../assets/audio/kasrah/single/{file_name}\"\n"
 
     source_file = os.path.join(path, original_name)
     destination_file = os.path.join(path, file_name)
