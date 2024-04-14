@@ -121,6 +121,36 @@ import haaFD from "../../assets/audio/fathah/double/haa-fd.mp3"
 import hamjaFD from "../../assets/audio/fathah/double/hamja-fd.mp3"
 import eaFD from "../../assets/audio/fathah/double/ea-fd.mp3"
 
+import alifKD from "../../assets/audio/kasrah/double/alif-kd.mp3"
+import baKD from "../../assets/audio/kasrah/double/ba-kd.mp3"
+import taKD from "../../assets/audio/kasrah/double/ta-kd.mp3"
+import saKD from "../../assets/audio/kasrah/double/sa-kd.mp3"
+import jimKD from "../../assets/audio/kasrah/double/jim-kd.mp3"
+import haKD from "../../assets/audio/kasrah/double/ha-kd.mp3"
+import khKD from "../../assets/audio/kasrah/double/kh-kd.mp3"
+import dalKD from "../../assets/audio/kasrah/double/dal-kd.mp3"
+import jalKD from "../../assets/audio/kasrah/double/jal-kd.mp3"
+import roKD from "../../assets/audio/kasrah/double/ro-kd.mp3"
+import jhaKD from "../../assets/audio/kasrah/double/jha-kd.mp3"
+import sinKD from "../../assets/audio/kasrah/double/sin-kd.mp3"
+import shinKD from "../../assets/audio/kasrah/double/shin-kd.mp3"
+import sodKD from "../../assets/audio/kasrah/double/sod-kd.mp3"
+import dodKD from "../../assets/audio/kasrah/double/dod-kd.mp3"
+import toKD from "../../assets/audio/kasrah/double/to-kd.mp3"
+import joKD from "../../assets/audio/kasrah/double/jo-kd.mp3"
+import aenKD from "../../assets/audio/kasrah/double/aen-kd.mp3"
+import gaenKD from "../../assets/audio/kasrah/double/gaen-kd.mp3"
+import faKD from "../../assets/audio/kasrah/double/fa-kd.mp3"
+import kofKD from "../../assets/audio/kasrah/double/kof-kd.mp3"
+import kafKD from "../../assets/audio/kasrah/double/kaf-kd.mp3"
+import lamKD from "../../assets/audio/kasrah/double/lam-kd.mp3"
+import mimKD from "../../assets/audio/kasrah/double/mim-kd.mp3"
+import nunKD from "../../assets/audio/kasrah/double/nun-kd.mp3"
+import owaoKD from "../../assets/audio/kasrah/double/owao-kd.mp3"
+import haaKD from "../../assets/audio/kasrah/double/haa-kd.mp3"
+import hamjaKD from "../../assets/audio/kasrah/double/hamja-kd.mp3"
+import eaKD from "../../assets/audio/kasrah/double/ea-kd.mp3"
+
 
 interface Props extends RapidProps {
 }
@@ -153,203 +183,203 @@ export default class JoborJerPeshView extends RapidComponent<Props, State> {
     getData() {
         return [
             {letter: "اٌ", audio: zimAenLam},
-            {letter: "اٍ", audio: zimAenLam},
+            {letter: "اٍ", audio: alifKD},
             {letter: "اً", audio: alifFD},
             {letter: "اُ", audio: alifDS},
             {letter: "اِ", audio: alifKS},
             {letter: "اَ", audio: alifFS},
 
             {letter: "بٌ", audio: zimAenLam},
-            {letter: "بٍ", audio: zimAenLam},
+            {letter: "بٍ", audio: baKD},
             {letter: "بً", audio: baFD},
             {letter: "بُ", audio: baDS},
             {letter: "بِ", audio: baKS},
             {letter: "بَ", audio: baFS},
 
             {letter: "تٌ", audio: zimAenLam},
-            {letter: "تٍ", audio: zimAenLam},
+            {letter: "تٍ", audio: taKD},
             {letter: "تً", audio: taFD},
             {letter: "تُ", audio: taDS},
             {letter: "تِ", audio: taKS},
             {letter: "تَ", audio: taFS},
 
             {letter: "ثٌ", audio: zimAenLam},
-            {letter: "ثٍ", audio: zimAenLam},
+            {letter: "ثٍ", audio: saKD},
             {letter: "ثً", audio: saFD},
             {letter: "ثُ", audio: saDS},
             {letter: "ثِ", audio: saKS},
             {letter: "ثَ", audio: saFS},
 
             {letter: "جٌ", audio: zimAenLam},
-            {letter: "جٍ", audio: zimAenLam},
+            {letter: "جٍ", audio: jimKD},
             {letter: "جً", audio: jimFD},
             {letter: "جُ", audio: jimDS},
             {letter: "جِ", audio: jimKS},
             {letter: "جَ", audio: jimFS},
 
             {letter: "حٌ", audio: zimAenLam},
-            {letter: "حٍ", audio: zimAenLam},
+            {letter: "حٍ", audio: haKD},
             {letter: "حً", audio: haFD},
             {letter: "حُ", audio: haDS},
             {letter: "حِ", audio: haKS},
             {letter: "حَ", audio: haFS},
 
             {letter: "خٌ", audio: zimAenLam},
-            {letter: "خٍ", audio: zimAenLam},
+            {letter: "خٍ", audio: khKD},
             {letter: "خً", audio: khFD},
             {letter: "خُ", audio: khDS},
             {letter: "خِ", audio: khKS},
             {letter: "خَ", audio: khFS},
 
             {letter: "دٌ", audio: zimAenLam},
-            {letter: "دٍ", audio: zimAenLam},
+            {letter: "دٍ", audio: dalKD},
             {letter: "دً", audio: dalFD},
             {letter: "دُ", audio: dalDS},
             {letter: "دِ", audio: dalKS},
             {letter: "دَ", audio: dalFS},
 
             {letter: "ذٌ", audio: zimAenLam},
-            {letter: "ذٍ", audio: zimAenLam},
+            {letter: "ذٍ", audio: jalKD},
             {letter: "ذً", audio: jalFD},
             {letter: "ذُ", audio: jalDS},
             {letter: "ذِ", audio: jalKS},
             {letter: "ذَ", audio: jalFS},
 
             {letter: "رٌ", audio: zimAenLam},
-            {letter: "رٍ", audio: zimAenLam},
+            {letter: "رٍ", audio: roKD},
             {letter: "رً", audio: roFD},
             {letter: "رُ", audio: roDS},
             {letter: "رِ", audio: roKS},
             {letter: "رَ", audio: roFS},
 
             {letter: "زٌ", audio: zimAenLam},
-            {letter: "زٍ", audio: zimAenLam},
+            {letter: "زٍ", audio: jhaKD},
             {letter: "زً", audio: jhaFD},
             {letter: "زُ", audio: jhaDS},
             {letter: "زِ", audio: jhaKS},
             {letter: "زَ", audio: jhaFS},
 
             {letter: "سٌ", audio: zimAenLam},
-            {letter: "سٍ", audio: zimAenLam},
+            {letter: "سٍ", audio: sinKD},
             {letter: "سً", audio: sinFD},
             {letter: "سُ", audio: sinDS},
             {letter: "سِ", audio: sinKS},
             {letter: "سَ", audio: sinFS},
 
             {letter: "شٌ", audio: zimAenLam},
-            {letter: "شٍ", audio: zimAenLam},
+            {letter: "شٍ", audio: shinKD},
             {letter: "شً", audio: shinFD},
             {letter: "شُ", audio: shinDS},
             {letter: "شِ", audio: shinKS},
             {letter: "شَ", audio: shinFS},
 
             {letter: "صٌ", audio: zimAenLam},
-            {letter: "صٍ", audio: zimAenLam},
+            {letter: "صٍ", audio: sodKD},
             {letter: "صً", audio: sodFD},
             {letter: "صُ", audio: sodDS},
             {letter: "صِ", audio: sodKS},
             {letter: "صَ", audio: sodFS},
 
             {letter: "ضٌ", audio: zimAenLam},
-            {letter: "ضٍ", audio: zimAenLam},
+            {letter: "ضٍ", audio: dodKD},
             {letter: "ضً", audio: dodFD},
             {letter: "ضُ", audio: dodDS},
             {letter: "ضِ", audio: dodKS},
             {letter: "ضَ", audio: dodFS},
 
             {letter: "طٌ", audio: zimAenLam},
-            {letter: "طٍ", audio: zimAenLam},
+            {letter: "طٍ", audio: toKD},
             {letter: "طً", audio: toFD},
             {letter: "طُ", audio: toDS},
             {letter: "طِ", audio: toKS},
             {letter: "طَ", audio: toFS},
 
             {letter: "ظٌ", audio: zimAenLam},
-            {letter: "ظٍ", audio: zimAenLam},
+            {letter: "ظٍ", audio: joKD},
             {letter: "ظً", audio: joFD},
             {letter: "ظُ", audio: joDS},
             {letter: "ظِ", audio: joKS},
             {letter: "ظَ", audio: joFS},
 
             {letter: "عٌ", audio: zimAenLam},
-            {letter: "عٍ", audio: zimAenLam},
+            {letter: "عٍ", audio: aenKD},
             {letter: "عً", audio: aenFD},
             {letter: "عُ", audio: aenDS},
             {letter: "عِ", audio: aenKS},
             {letter: "عَ", audio: aenFS},
 
             {letter: "غٌ", audio: zimAenLam},
-            {letter: "غٍ", audio: zimAenLam},
+            {letter: "غٍ", audio: gaenKD},
             {letter: "غً", audio: gaenFD},
             {letter: "غُ", audio: gaenDS},
             {letter: "غِ", audio: gaenKS},
             {letter: "غَ", audio: gaenFS},
 
             {letter: "فٌ", audio: zimAenLam},
-            {letter: "فٍ", audio: zimAenLam},
+            {letter: "فٍ", audio: faKD},
             {letter: "فً", audio: faFD},
             {letter: "فُ", audio: faDS},
             {letter: "فِ", audio: faKS},
             {letter: "فَ", audio: faFS},
 
             {letter: "قٌ", audio: zimAenLam},
-            {letter: "قٍ", audio: zimAenLam},
+            {letter: "قٍ", audio: kofKD},
             {letter: "قً", audio: kofFD},
             {letter: "قُ", audio: kofDS},
             {letter: "قِ", audio: kofKS},
             {letter: "قَ", audio: kofFS},
 
             {letter: "كٌ", audio: zimAenLam},
-            {letter: "كٍ", audio: zimAenLam},
+            {letter: "كٍ", audio: kafKD},
             {letter: "كً", audio: kafFD},
             {letter: "كُ", audio: kafDS},
             {letter: "كِ", audio: kafKS},
             {letter: "كَ", audio: kafFS},
 
             {letter: "لٌ", audio: zimAenLam},
-            {letter: "لٍ", audio: zimAenLam},
+            {letter: "لٍ", audio: lamKD},
             {letter: "لً", audio: lamFD},
             {letter: "لُ", audio: lamDS},
             {letter: "لِ", audio: lamKS},
             {letter: "لَ", audio: lamFS},
 
             {letter: "مٌ", audio: zimAenLam},
-            {letter: "مٍ", audio: zimAenLam},
+            {letter: "مٍ", audio: mimKD},
             {letter: "مً", audio: mimFD},
             {letter: "مُ", audio: mimDS},
             {letter: "مِ", audio: mimKS},
             {letter: "مَ", audio: mimFS},
 
             {letter: "نٌ", audio: zimAenLam},
-            {letter: "نٍ", audio: zimAenLam},
+            {letter: "نٍ", audio: nunKD},
             {letter: "نً", audio: nunFD},
             {letter: "نُ", audio: nunDS},
             {letter: "نِ", audio: nunKS},
             {letter: "نَ", audio: nunFS},
 
             {letter: "وٌ", audio: zimAenLam},
-            {letter: "وٍ", audio: zimAenLam},
+            {letter: "وٍ", audio: owaoKD},
             {letter: "وً", audio: owaoFD},
             {letter: "وُ", audio: owaoDS},
             {letter: "وِ", audio: owaoKS},
             {letter: "وَ", audio: owaoFS},
 
             {letter: "هٌ", audio: zimAenLam},
-            {letter: "هٍ", audio: zimAenLam},
+            {letter: "هٍ", audio: haaKD},
             {letter: "هً", audio: haaFD},
             {letter: "هُ", audio: haaDS},
             {letter: "هِ", audio: haaKS},
             {letter: "هَ", audio: haaFS},
 
             {letter: "ءٌ", audio: zimAenLam},
-            {letter: "ءٍ", audio: zimAenLam},
+            {letter: "ءٍ", audio: hamjaKD},
             {letter: "ءً", audio: hamjaFD},
             {letter: "ءُ", audio: hamjaDS},
             {letter: "ءِ", audio: hamjaKS},
             {letter: "ءَ", audio: hamjaFS},
 
             {letter: "يٌ", audio: zimAenLam},
-            {letter: "يٍ", audio: zimAenLam},
+            {letter: "يٍ", audio: eaKD},
             {letter: "يً", audio: eaFD},
             {letter: "يُ", audio: eaDS},
             {letter: "يِ", audio: eaKS},
