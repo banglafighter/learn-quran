@@ -28,6 +28,7 @@ import ja from "../../assets/audio/alphabet/ja.mp3"
 import ro from "../../assets/audio/alphabet/ro.mp3"
 import jal from "../../assets/audio/alphabet/jal.mp3"
 import dal from "../../assets/audio/alphabet/dal.mp3"
+import hamja from "../../assets/audio/alphabet/hamja.mp3"
 
 
 interface Props extends RapidProps {
@@ -77,8 +78,9 @@ export default class AlphabetView extends RapidComponent<Props, State> {
             {final: "ـل", middle: "ـلـ", initial: "لـ", isolated: "ل", audio: lam},
             {final: "ـم", middle: "ـمـ", initial: "مـ", isolated: "م", audio: mim},
             {final: "ـن", middle: "ـنـ", initial: "نـ", isolated: "ن", audio: nun},
-            {final: "ـه", middle: "ـهـ", initial: "هـ", isolated: "ہ", audio: haa},
             {final: "ـو", middle: "ـو", initial: "و", isolated: "و", audio: oyao},
+            {final: "ـه", middle: "ـهـ", initial: "هـ", isolated: "ہ", audio: haa},
+            {final: "ء", middle: "ء", initial: "ء", isolated: "ء", audio: hamja},
             {final: "ي", middle: "ـيـ", initial: "يـ", isolated: "ي", audio: ea},
         ]
     }
