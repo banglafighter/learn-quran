@@ -1,6 +1,6 @@
 import os
 
-path = 'D:\open-source\learn-quran\\application\\base-app\\app\\assets\\audio\horkot-practice'
+path = 'D:\open-source\learn-quran\\application\\base-app\\app\\assets\\audio\horkot-practice\\tmp'
 for file in os.listdir(path):
     file = str(file)
     file_name = file.replace(".mp3", "")
