@@ -23,6 +23,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
             {name: "Alphabet - Practice", url: QuranUrlMapping.ui.alphabetPractice},
             {name: "Alphabet - Concat", url: QuranUrlMapping.ui.alphabetConcat},
             {name: "Jobor Jer Pesh", url: QuranUrlMapping.ui.joborJerPesh},
+            {name: "Horkot Practice", url: QuranUrlMapping.ui.horkotPractice},
         ]
     }
 

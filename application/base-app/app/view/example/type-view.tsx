@@ -28,6 +28,7 @@ export default class TypeView extends RapidComponent<Props, State> {
 
     fieldDefinition(field: FieldSpecification) {
         field.textArea({name: "type", label: _t("Type Text")})
+        field.textArea({name: "jsKeyboard", label: _t("JS Keyboard")})
     }
 
     setArabicLetter(english: string, normal: string, shift: string) {
@@ -35,8 +36,8 @@ export default class TypeView extends RapidComponent<Props, State> {
             <div className={"key one d-flex justify-content-center"}>
                 <div className={"me-2"}>{english}</div>
                 <div className={"d-flex flex-column arabic-font"}>
-                    <div>{normal}</div>
                     <div>{shift}</div>
+                    <div>{normal}</div>
                 </div>
             </div>
         )
@@ -48,16 +49,16 @@ export default class TypeView extends RapidComponent<Props, State> {
 
                 <section className="key-row">
                     <div className="key one">~</div>
-                    {this.setArabicLetter("1", "١", "َ")}
-                    {this.setArabicLetter("2", "٢", "ِ")}
-                    {this.setArabicLetter("3", "٣", "ُ")}
-                    {this.setArabicLetter("4", "٤", "ً ")}
-                    {this.setArabicLetter("5", "٥", "ٍ ")}
-                    {this.setArabicLetter("6", "٦", "ٌ")}
-                    {this.setArabicLetter("7", "٧", "ٰ")}
-                    {this.setArabicLetter("8", "٨", "ٖ")}
-                    {this.setArabicLetter("9", "٩", "ٗ")}
-                    {this.setArabicLetter("0", "٠", "۝")}
+                    {this.setArabicLetter("1", "١", "")}
+                    {this.setArabicLetter("2", "٢", "")}
+                    {this.setArabicLetter("3", "٣", "")}
+                    {this.setArabicLetter("4", "٤", "")}
+                    {this.setArabicLetter("5", "٥", "")}
+                    {this.setArabicLetter("6", "٦", "")}
+                    {this.setArabicLetter("7", "٧", "")}
+                    {this.setArabicLetter("8", "٨", "")}
+                    {this.setArabicLetter("9", "٩", "")}
+                    {this.setArabicLetter("0", "٠", "")}
                     <div className="key one">-</div>
                     <div className="key one">=</div>
                     <div className="key two">backspace</div>
@@ -65,8 +66,8 @@ export default class TypeView extends RapidComponent<Props, State> {
 
                 <section className="key-row">
                     <div className="key one-one-half l">tab</div>
-                    {this.setArabicLetter("q", "ة", "")}
-                    {this.setArabicLetter("w", "ّ", "")}
+                    {this.setArabicLetter("q", "ة", "۝")}
+                    {this.setArabicLetter("w", "ِ", "ٍ")}
                     {this.setArabicLetter("e", "ى", "آ")}
                     {this.setArabicLetter("r", "ر", "")}
                     {this.setArabicLetter("t", "ت", "ط")}
@@ -74,7 +75,7 @@ export default class TypeView extends RapidComponent<Props, State> {
                     {this.setArabicLetter("u", "ٳ", "أ")}
                     {this.setArabicLetter("i", "ي", "ئ")}
                     {this.setArabicLetter("o", "و", "ؤ")}
-                    {this.setArabicLetter("p", "ٓ", "")}
+                    {this.setArabicLetter("p", "ُ", "ٌ")}
                     <div className="key one">[</div>
                     <div className="key one">]</div>
                     <div className="key one">\</div>
@@ -90,7 +91,7 @@ export default class TypeView extends RapidComponent<Props, State> {
                     {this.setArabicLetter("h", "ه", "ح")}
                     {this.setArabicLetter("j", "ج", "ذ")}
                     {this.setArabicLetter("k", "ك", "ق")}
-                    {this.setArabicLetter("l", "ل", "")}
+                    {this.setArabicLetter("l", "ل", " ْ")}
                     {this.setArabicLetter(";", "", "")}
                     {this.setArabicLetter("'", "", "")}
                     <div className="key two r">enter</div>
@@ -101,10 +102,10 @@ export default class TypeView extends RapidComponent<Props, State> {
                     {this.setArabicLetter("z", "ز", "ظ")}
                     {this.setArabicLetter("x", "خ", "")}
                     {this.setArabicLetter("c", "ث", "ص")}
-                    {this.setArabicLetter("v", "ْ", "")}
-                    {this.setArabicLetter("b", "ب", "")}
-                    {this.setArabicLetter("n", "ن", "")}
-                    {this.setArabicLetter("m", "م", "")}
+                    {this.setArabicLetter("v", "َ", "ً")}
+                    {this.setArabicLetter("b", "ب", "ٰ")}
+                    {this.setArabicLetter("n", "ن", "ٖ")}
+                    {this.setArabicLetter("m", "م", "ٗ")}
                     <div className="key one">&lt;</div>
                     <div className="key one">&gt;</div>
                     <div className="key one">/</div>
@@ -134,6 +135,7 @@ export default class TypeView extends RapidComponent<Props, State> {
                     {this.getKeyboardView()}
                 </Column>
                 <TextField {...this.setupFieldAttrs("type")} addWrapperClass={"col-md-12"}/>
+                <TextField {...this.setupFieldAttrs("jsKeyboard")} addWrapperClass={"col-md-12"}/>
             </Row>
         )
     }

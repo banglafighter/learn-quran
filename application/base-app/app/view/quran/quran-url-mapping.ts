@@ -6,6 +6,7 @@ const AlphabetHardView = React.lazy(() => import('./alphabet-hard-view'));
 const AlphabetPracticeView = React.lazy(() => import('./alphabet-practice'));
 const AlphabetConcatView = React.lazy(() => import('./alphabet-concat'));
 const JoborJerPeshView = React.lazy(() => import('./jobor-jer-pesh'));
+const HorkotPracticeView = React.lazy(() => import('./horkot-practice'));
 
 const UI_BASE_URL = "/quran"
 
@@ -21,6 +22,7 @@ export default class QuranUrlMapping {
         alphabetPractice: UI_BASE_URL + "/alphabet-practice",
         alphabetConcat: UI_BASE_URL + "/alphabet-concat",
         joborJerPesh: UI_BASE_URL + "/jobor-jer-pesh",
+        horkotPractice: UI_BASE_URL + "/horkot-practice",
     };
 
     private static privateUrlMappings(privateLayoutInfo: RapidLayoutInfoData): RapidLayoutInfoData {
@@ -33,6 +35,7 @@ export default class QuranUrlMapping {
         publicLayoutInfo.addPageInstance(this.ui.alphabetPractice, AlphabetPracticeView);
         publicLayoutInfo.addPageInstance(this.ui.alphabetConcat, AlphabetConcatView);
         publicLayoutInfo.addPageInstance(this.ui.joborJerPesh, JoborJerPeshView);
+        publicLayoutInfo.addPageInstance(this.ui.horkotPractice, HorkotPracticeView);
         return publicLayoutInfo;
     }
 
