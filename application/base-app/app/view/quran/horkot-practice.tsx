@@ -34,7 +34,61 @@ import kps12 from "../../assets/audio/horkot-practice/kps-12.mp3"
 import kps13 from "../../assets/audio/horkot-practice/kps-13.mp3"
 import kps14 from "../../assets/audio/horkot-practice/kps-14.mp3"
 import kps15 from "../../assets/audio/horkot-practice/kps-15.mp3"
-import ksp16 from "../../assets/audio/horkot-practice/ksp-16.mp3"
+import kps16 from "../../assets/audio/horkot-practice/kps-16.mp3"
+
+import dps1 from "../../assets/audio/horkot-practice/dps-1.mp3"
+import dps2 from "../../assets/audio/horkot-practice/dps-2.mp3"
+import dps3 from "../../assets/audio/horkot-practice/dps-3.mp3"
+import dps4 from "../../assets/audio/horkot-practice/dps-4.mp3"
+import dps5 from "../../assets/audio/horkot-practice/dps-5.mp3"
+import dps6 from "../../assets/audio/horkot-practice/dps-6.mp3"
+import dps7 from "../../assets/audio/horkot-practice/dps-7.mp3"
+import dps8 from "../../assets/audio/horkot-practice/dps-8.mp3"
+import dps9 from "../../assets/audio/horkot-practice/dps-9.mp3"
+import dps10 from "../../assets/audio/horkot-practice/dps-10.mp3"
+import dps11 from "../../assets/audio/horkot-practice/dps-11.mp3"
+import dps12 from "../../assets/audio/horkot-practice/dps-12.mp3"
+import dps13 from "../../assets/audio/horkot-practice/dps-13.mp3"
+import dps14 from "../../assets/audio/horkot-practice/dps-14.mp3"
+import dps15 from "../../assets/audio/horkot-practice/dps-15.mp3"
+import dps16 from "../../assets/audio/horkot-practice/dps-16.mp3"
+
+import cps1 from "../../assets/audio/horkot-practice/cps-1.mp3"
+import cps2 from "../../assets/audio/horkot-practice/cps-2.mp3"
+import cps3 from "../../assets/audio/horkot-practice/cps-3.mp3"
+import cps4 from "../../assets/audio/horkot-practice/cps-4.mp3"
+import cps5 from "../../assets/audio/horkot-practice/cps-5.mp3"
+import cps6 from "../../assets/audio/horkot-practice/cps-6.mp3"
+import cps7 from "../../assets/audio/horkot-practice/cps-7.mp3"
+import cps8 from "../../assets/audio/horkot-practice/cps-8.mp3"
+import cps9 from "../../assets/audio/horkot-practice/cps-9.mp3"
+import cps10 from "../../assets/audio/horkot-practice/cps-10.mp3"
+import cps11 from "../../assets/audio/horkot-practice/cps-11.mp3"
+import cps12 from "../../assets/audio/horkot-practice/cps-12.mp3"
+import cps13 from "../../assets/audio/horkot-practice/cps-13.mp3"
+import cps14 from "../../assets/audio/horkot-practice/cps-14.mp3"
+import cps15 from "../../assets/audio/horkot-practice/cps-15.mp3"
+import cps16 from "../../assets/audio/horkot-practice/cps-16.mp3"
+import cps17 from "../../assets/audio/horkot-practice/cps-17.mp3"
+import cps18 from "../../assets/audio/horkot-practice/cps-18.mp3"
+import cps19 from "../../assets/audio/horkot-practice/cps-19.mp3"
+import cps20 from "../../assets/audio/horkot-practice/cps-20.mp3"
+import cps21 from "../../assets/audio/horkot-practice/cps-21.mp3"
+import cps22 from "../../assets/audio/horkot-practice/cps-22.mp3"
+import cps23 from "../../assets/audio/horkot-practice/cps-23.mp3"
+import cps24 from "../../assets/audio/horkot-practice/cps-24.mp3"
+import cps25 from "../../assets/audio/horkot-practice/cps-25.mp3"
+import cps26 from "../../assets/audio/horkot-practice/cps-26.mp3"
+import cps27 from "../../assets/audio/horkot-practice/cps-27.mp3"
+import cps28 from "../../assets/audio/horkot-practice/cps-28.mp3"
+import cps29 from "../../assets/audio/horkot-practice/cps-29.mp3"
+import cps30 from "../../assets/audio/horkot-practice/cps-30.mp3"
+import cps31 from "../../assets/audio/horkot-practice/cps-31.mp3"
+import cps32 from "../../assets/audio/horkot-practice/cps-32.mp3"
+import cps33 from "../../assets/audio/horkot-practice/cps-33.mp3"
+import cps34 from "../../assets/audio/horkot-practice/cps-34.mp3"
+
+
 
 interface Props extends RapidProps {
 }
@@ -98,59 +152,59 @@ export default class HorkotPracticeView extends RapidComponent<Props, State> {
             {letter: "ٳِدِزِ", audio: kps13},
             {letter: "ذِضِسِ", audio: kps14},
             {letter: "وِهِلِ", audio: kps15},
-            {letter: "ٳِقِجِ", audio: ksp16},
+            {letter: "ٳِقِجِ", audio: kps16},
 
-            {letter: "بُءُزُ", audio: zimAenLam},
-            {letter: "ذُقُغُ", audio: zimAenLam},
-            {letter: "حُبُمُ", audio: zimAenLam},
-            {letter: "جُكُوُ", audio: zimAenLam},
-            {letter: "كُءُحُ", audio: zimAenLam},
-            {letter: "مُضُفُ", audio: zimAenLam},
-            {letter: "نُمُظُ", audio: zimAenLam},
-            {letter: "أُدُتُ", audio: zimAenLam},
-            {letter: "عُفُكُ", audio: zimAenLam},
-            {letter: "رُنُشُ", audio: zimAenLam},
-            {letter: "صُهُيُ", audio: zimAenLam},
-            {letter: "ثُبُئُ", audio: zimAenLam},
-            {letter: "تُوُسُ", audio: zimAenLam},
-            {letter: "طُرُأُ", audio: zimAenLam},
-            {letter: "وُخُضُ", audio: zimAenLam},
-            {letter: "يُظُهُ", audio: zimAenLam},
+            {letter: "بُءُزُ", audio: dps1},
+            {letter: "ذُقُغُ", audio: dps2},
+            {letter: "حُبُمُ", audio: dps3},
+            {letter: "جُكُوُ", audio: dps4},
+            {letter: "كُءُحُ", audio: dps5},
+            {letter: "مُضُفُ", audio: dps6},
+            {letter: "نُمُظُ", audio: dps7},
+            {letter: "أُدُتُ", audio: dps8},
+            {letter: "عُفُكُ", audio: dps9},
+            {letter: "رُنُشُ", audio: dps10},
+            {letter: "صُهُيُ", audio: dps11},
+            {letter: "ثُبُئُ", audio: dps12},
+            {letter: "تُوُسُ", audio: dps13},
+            {letter: "طُرُأُ", audio: dps14},
+            {letter: "وُخُضُ", audio: dps15},
+            {letter: "يُظُهُ", audio: dps16},
 
-            {letter: "جَعَلَ", audio: zimAenLam},
-            {letter: "أَجَذَ", audio: zimAenLam},
-            {letter: "أَذِنَ", audio: zimAenLam},
-            {letter: "أَمَرَ", audio: zimAenLam},
-            {letter: "بَخِلَ", audio: zimAenLam},
-            {letter: "قَعَدَ", audio: zimAenLam},
-            {letter: "ﺑَﺌِﺲَ", audio: zimAenLam},
-            {letter: "تَعِبَ", audio: zimAenLam},
-            {letter: "خَشِيَ", audio: zimAenLam},
-            {letter: "خُلِقَ", audio: zimAenLam},
-            {letter: "وَثُقَ", audio: zimAenLam},
-            {letter: "يَدَعُ", audio: zimAenLam},
-            {letter: "نَصِبَ", audio: zimAenLam},
-            {letter: "طَرِبَ", audio: zimAenLam},
-            {letter: "فَتَحَ", audio: zimAenLam},
-            {letter: "ذُعِرَ", audio: zimAenLam},
-            {letter: "صَقَلَ", audio: zimAenLam},
-            {letter: "قُرِٸَ", audio: zimAenLam},
-            {letter: "رَكِبَ", audio: zimAenLam},
-            {letter: "دَخَلَ", audio: zimAenLam},
-            {letter: "لَحِسَ", audio: zimAenLam},
-            {letter: "ذَكَرَ", audio: zimAenLam},
-            {letter: "عَبَسَ", audio: zimAenLam},
-            {letter: "خَلَقَ", audio: zimAenLam},
-            {letter: "شُغِلَ", audio: zimAenLam},
-            {letter: "حَسَدَ", audio: zimAenLam},
-            {letter: "حَشَرَ", audio: zimAenLam},
-            {letter: "يَقُظَ", audio: zimAenLam},
-            {letter: "حَمَقِ", audio: zimAenLam},
-            {letter: "جَمَعَ", audio: zimAenLam},
-            {letter: "تَلِفَ", audio: zimAenLam},
-            {letter: "مَتُنَ", audio: zimAenLam},
-            {letter: "شَرِبَ", audio: zimAenLam},
-            {letter: "قُتِلَ", audio: zimAenLam},
+            {letter: "جَعَلَ", audio: cps1},
+            {letter: "أَجَذَ", audio: cps2},
+            {letter: "أَذِنَ", audio: cps3},
+            {letter: "أَمَرَ", audio: cps4},
+            {letter: "بَخِلَ", audio: cps5},
+            {letter: "قَعَدَ", audio: cps6},
+            {letter: "ﺑَﺌِﺲَ", audio: cps7},
+            {letter: "تَعِبَ", audio: cps8},
+            {letter: "خَشِيَ", audio: cps9},
+            {letter: "خُلِقَ", audio: cps10},
+            {letter: "وَثُقَ", audio: cps11},
+            {letter: "يَدَعُ", audio: cps12},
+            {letter: "نَصِبَ", audio: cps13},
+            {letter: "طَرِبَ", audio: cps14},
+            {letter: "فَتَحَ", audio: cps15},
+            {letter: "ذُعِرَ", audio: cps16},
+            {letter: "صَقَلَ", audio: cps17},
+            {letter: "قُرِٸَ", audio: cps18},
+            {letter: "رَكِبَ", audio: cps19},
+            {letter: "دَخَلَ", audio: cps20},
+            {letter: "لَحِسَ", audio: cps21},
+            {letter: "ذَكَرَ", audio: cps22},
+            {letter: "عَبَسَ", audio: cps23},
+            {letter: "خَلَقَ", audio: cps24},
+            {letter: "شُغِلَ", audio: cps25},
+            {letter: "حَسَدَ", audio: cps26},
+            {letter: "حَشَرَ", audio: cps27},
+            {letter: "يَقُظَ", audio: cps28},
+            {letter: "حَمَقِ", audio: cps29},
+            {letter: "جَمَعَ", audio: cps30},
+            {letter: "تَلِفَ", audio: cps31},
+            {letter: "مَتُنَ", audio: cps32},
+            {letter: "شَرِبَ", audio: cps33},
+            {letter: "قُتِلَ", audio: cps34},
 
             {letter: "عَدَدًا", audio: zimAenLam},
             {letter: "أَحَدًا", audio: zimAenLam},
