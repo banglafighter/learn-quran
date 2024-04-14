@@ -1,7 +1,23 @@
 import {RapidAppContext, RapidComponent, RapidComponentState, RapidProps, RapidUtil, React} from "react-rapid-app";
 import {Button, Table, TableBody, TableCell, TableHead, TableRow} from "react-rapid-bootstrap";
-import zimAenLam from "../../assets/audio/alphabet/concat/zim-aen-lam.mp3"
+import zimAenLam from "../../assets/audio/horkot-practice/a-so-da.mp3"
 
+import aSoDa from "../../assets/audio/horkot-practice/a-so-da.mp3"
+import baToSha from "../../assets/audio/horkot-practice/ba-to-sha.mp3"
+import faOyaKo from "../../assets/audio/horkot-practice/fa-oya-ko.mp3"
+import goSaLa from "../../assets/audio/horkot-practice/go-sa-la.mp3"
+import haDoRo from "../../assets/audio/horkot-practice/ha-do-ro.mp3"
+import haLaBa from "../../assets/audio/horkot-practice/ha-la-ba.mp3"
+import jaAKho from "../../assets/audio/horkot-practice/ja-a-kho.mp3"
+import jaSaMa from "../../assets/audio/horkot-practice/ja-sa-ma.mp3"
+import kRoSa from "../../assets/audio/horkot-practice/k-ro-sa.mp3"
+import ladaYa from "../../assets/audio/horkot-practice/lada-ya.mp3"
+import naJaTa from "../../assets/audio/horkot-practice/na-ja-ta.mp3"
+import oJalA from "../../assets/audio/horkot-practice/o-jal-a.mp3"
+import shaKhoDa from "../../assets/audio/horkot-practice/sha-kho-da.mp3"
+import soHaJo from "../../assets/audio/horkot-practice/so-ha-jo.mp3"
+import taMaHa from "../../assets/audio/horkot-practice/ta-ma-ha.mp3"
+import yaAKa from "../../assets/audio/horkot-practice/ya-a-ka.mp3"
 
 interface Props extends RapidProps {
 }
@@ -33,22 +49,22 @@ export default class HorkotPracticeView extends RapidComponent<Props, State> {
 
     getData() {
         return [
-            {letter: "اَصَدَ", audio: zimAenLam},
-            {letter: "بَطَشَ", audio: zimAenLam},
-            {letter: "فَوَقَ", audio: zimAenLam},
-            {letter: "غَسَلَ", audio: zimAenLam},
-            {letter: "هَضَرَ", audio: zimAenLam},
-            {letter: "نَزَتَ", audio: zimAenLam},
-            {letter: "شَخَدَ", audio: zimAenLam},
-            {letter: "صَحَظَ", audio: zimAenLam},
-            {letter: "ذَأَخَ", audio: zimAenLam},
-            {letter: "يَعَكَ", audio: zimAenLam},
-            {letter: "زَثَمَ", audio: zimAenLam},
-            {letter: "تَمَحَ", audio: zimAenLam},
-            {letter: "قَرَسَ", audio: zimAenLam},
-            {letter: "لَدَيَ", audio: zimAenLam},
-            {letter: "حَلَبَ", audio: zimAenLam},
-            {letter: "وَجَعَ", audio: zimAenLam},
+            {letter: "اَصَدَ", audio: aSoDa},
+            {letter: "بَطَشَ", audio: baToSha},
+            {letter: "فَوَقَ", audio: faOyaKo},
+            {letter: "غَسَلَ", audio: goSaLa},
+            {letter: "هَضَرَ", audio: haDoRo},
+            {letter: "نَزَتَ", audio: naJaTa},
+            {letter: "شَخَدَ", audio: shaKhoDa},
+            {letter: "صَحَظَ", audio: soHaJo},
+            {letter: "ذَأَخَ", audio: jaAKho},
+            {letter: "يَعَكَ", audio: yaAKa},
+            {letter: "زَثَمَ", audio: jaSaMa},
+            {letter: "تَمَحَ", audio: taMaHa},
+            {letter: "قَرَسَ", audio: kRoSa},
+            {letter: "لَدَيَ", audio: ladaYa},
+            {letter: "حَلَبَ", audio: haLaBa},
+            {letter: "وَجَعَ", audio: oJalA},
 
             {letter: "ظِهِفِ", audio: zimAenLam},
             {letter: "هِفِوِ", audio: zimAenLam},
