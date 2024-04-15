@@ -106,6 +106,24 @@ import fpd15 from "../../assets/audio/horkot-practice/fpd-15.mp3"
 import fpd16 from "../../assets/audio/horkot-practice/fpd-16.mp3"
 
 
+import kpd1 from "../../assets/audio/horkot-practice/kpd-1.mp3"
+import kpd2 from "../../assets/audio/horkot-practice/kpd-2.mp3"
+import kpd3 from "../../assets/audio/horkot-practice/kpd-3.mp3"
+import kpd4 from "../../assets/audio/horkot-practice/kpd-4.mp3"
+import kpd5 from "../../assets/audio/horkot-practice/kpd-5.mp3"
+import kpd6 from "../../assets/audio/horkot-practice/kpd-6.mp3"
+import kpd7 from "../../assets/audio/horkot-practice/kpd-7.mp3"
+import kpd8 from "../../assets/audio/horkot-practice/kpd-8.mp3"
+import kpd9 from "../../assets/audio/horkot-practice/kpd-9.mp3"
+import kpd10 from "../../assets/audio/horkot-practice/kpd-10.mp3"
+import kpd11 from "../../assets/audio/horkot-practice/kpd-11.mp3"
+import kpd12 from "../../assets/audio/horkot-practice/kpd-12.mp3"
+import kpd13 from "../../assets/audio/horkot-practice/kpd-13.mp3"
+import kpd14 from "../../assets/audio/horkot-practice/kpd-14.mp3"
+import kpd15 from "../../assets/audio/horkot-practice/kpd-15.mp3"
+import kpd16 from "../../assets/audio/horkot-practice/kpd-16.mp3"
+
+
 interface Props extends RapidProps {
 }
 
@@ -239,22 +257,22 @@ export default class HorkotPracticeView extends RapidComponent<Props, State> {
             {letter: "قُرًى", audio: fpd15},
             {letter: "عَجَبًا", audio: fpd16},
 
-            {letter: "أَحَدٍ", audio: zimAenLam},
-            {letter: "أَخَلٍ", audio: zimAenLam},
-            {letter: "بِنَبَٳٍ", audio: zimAenLam},
-            {letter: "بِشَرَرٍ", audio: zimAenLam},
-            {letter: "حَرَجٍ", audio: zimAenLam},
-            {letter: "جَبَلٍ", audio: zimAenLam},
-            {letter: "خُلُقٍ", audio: zimAenLam},
-            {letter: "مَسَدٍ", audio: zimAenLam},
-            {letter: "نُصُبٍ", audio: zimAenLam},
-            {letter: "أُمَمٍ", audio: zimAenLam},
-            {letter: "سَعَتٍ", audio: zimAenLam},
-            {letter: "سَغَرَتٍ", audio: zimAenLam},
-            {letter: "سَغَرٍ", audio: zimAenLam},
-            {letter: "شَجَرٍ", audio: zimAenLam},
-            {letter: "صُحُفٍ", audio: zimAenLam},
-            {letter: "شُعَبٍ", audio: zimAenLam},
+            {letter: "أَحَدٍ", audio: kpd1},
+            {letter: "أَخَلٍ", audio: kpd2},
+            {letter: "بِنَبَٳٍ", audio: kpd3},
+            {letter: "بِشَرَرٍ", audio: kpd4},
+            {letter: "حَرَجٍ", audio: kpd5},
+            {letter: "جَبَلٍ", audio: kpd6},
+            {letter: "خُلُقٍ", audio: kpd7},
+            {letter: "مَسَدٍ", audio: kpd8},
+            {letter: "نُصُبٍ", audio: kpd9},
+            {letter: "أُمَمٍ", audio: kpd10},
+            {letter: "سَعَتٍ", audio: kpd11},
+            {letter: "سَفَرَتٍ", audio: kpd12},
+            {letter: "سَفَرٍ", audio: kpd13},
+            {letter: "شَجَرٍ", audio: kpd14},
+            {letter: "صُحُفٍ", audio: kpd15},
+            {letter: "شُعَبٍ", audio: kpd16},
 
             {letter: "أَخٌ", audio: zimAenLam},
             {letter: "بَشَرٌ", audio: zimAenLam},
