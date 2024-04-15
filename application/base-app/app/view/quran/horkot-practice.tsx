@@ -88,6 +88,22 @@ import cps32 from "../../assets/audio/horkot-practice/cps-32.mp3"
 import cps33 from "../../assets/audio/horkot-practice/cps-33.mp3"
 import cps34 from "../../assets/audio/horkot-practice/cps-34.mp3"
 
+import fpd1 from "../../assets/audio/horkot-practice/fpd-1.mp3"
+import fpd2 from "../../assets/audio/horkot-practice/fpd-2.mp3"
+import fpd3 from "../../assets/audio/horkot-practice/fpd-3.mp3"
+import fpd4 from "../../assets/audio/horkot-practice/fpd-4.mp3"
+import fpd5 from "../../assets/audio/horkot-practice/fpd-5.mp3"
+import fpd6 from "../../assets/audio/horkot-practice/fpd-6.mp3"
+import fpd7 from "../../assets/audio/horkot-practice/fpd-7.mp3"
+import fpd8 from "../../assets/audio/horkot-practice/fpd-8.mp3"
+import fpd9 from "../../assets/audio/horkot-practice/fpd-9.mp3"
+import fpd10 from "../../assets/audio/horkot-practice/fpd-10.mp3"
+import fpd11 from "../../assets/audio/horkot-practice/fpd-11.mp3"
+import fpd12 from "../../assets/audio/horkot-practice/fpd-12.mp3"
+import fpd13 from "../../assets/audio/horkot-practice/fpd-13.mp3"
+import fpd14 from "../../assets/audio/horkot-practice/fpd-14.mp3"
+import fpd15 from "../../assets/audio/horkot-practice/fpd-15.mp3"
+import fpd16 from "../../assets/audio/horkot-practice/fpd-16.mp3"
 
 
 interface Props extends RapidProps {
@@ -206,22 +222,22 @@ export default class HorkotPracticeView extends RapidComponent<Props, State> {
             {letter: "شَرِبَ", audio: cps33},
             {letter: "قُتِلَ", audio: cps34},
 
-            {letter: "عَدَدًا", audio: zimAenLam},
-            {letter: "أَحَدًا", audio: zimAenLam},
-            {letter: "دَرَجَتً", audio: zimAenLam},
-            {letter: "غَدَقًا", audio: zimAenLam},
-            {letter: "هَرَبًا", audio: zimAenLam},
-            {letter: "حَسَنًا", audio: zimAenLam},
-            {letter: "حَطَبًا", audio: zimAenLam},
-            {letter: "قَذِبًا", audio: zimAenLam},
-            {letter: "لِبَدًا", audio: zimAenLam},
-            {letter: "صَعَدًا", audio: zimAenLam},
-            {letter: "سُدًى", audio: zimAenLam},
-            {letter: "رَهَقًا", audio: zimAenLam},
-            {letter: "شَطَطًا", audio: zimAenLam},
-            {letter: "شُهُبًا", audio: zimAenLam},
-            {letter: "قُرًى", audio: zimAenLam},
-            {letter: "عَجَبًا", audio: zimAenLam},
+            {letter: "عَدَدًا", audio: fpd1},
+            {letter: "أَحَدًا", audio: fpd2},
+            {letter: "دَرَجَتً", audio: fpd3},
+            {letter: "غَدَقًا", audio: fpd4},
+            {letter: "هَرَبًا", audio: fpd5},
+            {letter: "حَسَنًا", audio: fpd6},
+            {letter: "حَطَبًا", audio: fpd7},
+            {letter: "قَذِبًا", audio: fpd8},
+            {letter: "لِبَدًا", audio: fpd9},
+            {letter: "صَعَدًا", audio: fpd10},
+            {letter: "سُدًى", audio: fpd11},
+            {letter: "رَهَقًا", audio: fpd12},
+            {letter: "شَطَطًا", audio: fpd13},
+            {letter: "شُهُبًا", audio: fpd14},
+            {letter: "قُرًى", audio: fpd15},
+            {letter: "عَجَبًا", audio: fpd16},
 
             {letter: "أَحَدٍ", audio: zimAenLam},
             {letter: "أَخَلٍ", audio: zimAenLam},
@@ -253,9 +269,9 @@ export default class HorkotPracticeView extends RapidComponent<Props, State> {
             {letter: "عَسِرٌ", audio: zimAenLam},
             {letter: "أُذُنٌ", audio: zimAenLam},
             {letter: "خُشُبٌ", audio: zimAenLam},
+            {letter: "لَعِبٌ", audio: zimAenLam},
             {letter: "وَلَدٌ", audio: zimAenLam},
             {letter: "مَرَضٌ", audio: zimAenLam},
-            {letter: "لَعِبٌ", audio: zimAenLam},
 
             {letter: "رَقَبَةٍ", audio: zimAenLam},
             {letter: "سُرُرٌ", audio: zimAenLam},
