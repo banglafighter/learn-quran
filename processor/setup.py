@@ -10,7 +10,7 @@ env = os.environ.get('source')
 
 
 def get_dependencies():
-    dependency = []
+    dependency = ["pydub==0.25.1"]
 
     if env and env == "code":
         return dependency

@@ -7,7 +7,7 @@ interface Props extends RapidProps {
 class State extends RapidComponentState {
 }
 
-export default class IndexView extends RapidComponent<Props, State> {
+export default class Qalqalah extends RapidComponent<Props, State> {
 
     state: State = new State();
     static contextType = RapidAppContext
@@ -19,7 +19,7 @@ export default class IndexView extends RapidComponent<Props, State> {
     renderUI() {
         const _this = this;
         return (
-            <>Basic View</>
+            <>Qalqalah View</>
         )
     }
 }
