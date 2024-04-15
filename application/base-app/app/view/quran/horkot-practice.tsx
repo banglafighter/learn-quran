@@ -123,6 +123,36 @@ import kpd14 from "../../assets/audio/horkot-practice/kpd-14.mp3"
 import kpd15 from "../../assets/audio/horkot-practice/kpd-15.mp3"
 import kpd16 from "../../assets/audio/horkot-practice/kpd-16.mp3"
 
+import dpd1 from "../../assets/audio/horkot-practice/dpd-1.mp3"
+import dpd2 from "../../assets/audio/horkot-practice/dpd-2.mp3"
+import dpd3 from "../../assets/audio/horkot-practice/dpd-3.mp3"
+import dpd4 from "../../assets/audio/horkot-practice/dpd-4.mp3"
+import dpd5 from "../../assets/audio/horkot-practice/dpd-5.mp3"
+import dpd6 from "../../assets/audio/horkot-practice/dpd-6.mp3"
+import dpd7 from "../../assets/audio/horkot-practice/dpd-7.mp3"
+import dpd8 from "../../assets/audio/horkot-practice/dpd-8.mp3"
+import dpd9 from "../../assets/audio/horkot-practice/dpd-9.mp3"
+import dpd10 from "../../assets/audio/horkot-practice/dpd-10.mp3"
+import dpd11 from "../../assets/audio/horkot-practice/dpd-11.mp3"
+import dpd12 from "../../assets/audio/horkot-practice/dpd-12.mp3"
+import dpd13 from "../../assets/audio/horkot-practice/dpd-13.mp3"
+import dpd14 from "../../assets/audio/horkot-practice/dpd-14.mp3"
+import dpd15 from "../../assets/audio/horkot-practice/dpd-15.mp3"
+import dpd16 from "../../assets/audio/horkot-practice/dpd-16.mp3"
+
+import cpd1 from "../../assets/audio/horkot-practice/cpd-1.mp3"
+import cpd2 from "../../assets/audio/horkot-practice/cpd-2.mp3"
+import cpd3 from "../../assets/audio/horkot-practice/cpd-3.mp3"
+import cpd4 from "../../assets/audio/horkot-practice/cpd-4.mp3"
+import cpd5 from "../../assets/audio/horkot-practice/cpd-5.mp3"
+import cpd6 from "../../assets/audio/horkot-practice/cpd-6.mp3"
+import cpd7 from "../../assets/audio/horkot-practice/cpd-7.mp3"
+import cpd8 from "../../assets/audio/horkot-practice/cpd-8.mp3"
+import cpd9 from "../../assets/audio/horkot-practice/cpd-9.mp3"
+import cpd10 from "../../assets/audio/horkot-practice/cpd-10.mp3"
+import cpd11 from "../../assets/audio/horkot-practice/cpd-11.mp3"
+import cpd12 from "../../assets/audio/horkot-practice/cpd-12.mp3"
+
 
 interface Props extends RapidProps {
 }
@@ -274,35 +304,35 @@ export default class HorkotPracticeView extends RapidComponent<Props, State> {
             {letter: "صُحُفٍ", audio: kpd15},
             {letter: "شُعَبٍ", audio: kpd16},
 
-            {letter: "أَخٌ", audio: zimAenLam},
-            {letter: "بَشَرٌ", audio: zimAenLam},
-            {letter: "لَقَسَمٌ", audio: zimAenLam},
-            {letter: "فَنُزُلٌ", audio: zimAenLam},
-            {letter: "حَرَجٌ", audio: zimAenLam},
-            {letter: "حَسَنَتٌ", audio: zimAenLam},
-            {letter: "مَلَكٌ", audio: zimAenLam},
-            {letter: "نَفَرٌ", audio: zimAenLam},
-            {letter: "حُمُرٌ", audio: zimAenLam},
-            {letter: "وَدِيَتٌ", audio: zimAenLam},
-            {letter: "عَسِرٌ", audio: zimAenLam},
-            {letter: "أُذُنٌ", audio: zimAenLam},
-            {letter: "خُشُبٌ", audio: zimAenLam},
-            {letter: "لَعِبٌ", audio: zimAenLam},
-            {letter: "وَلَدٌ", audio: zimAenLam},
-            {letter: "مَرَضٌ", audio: zimAenLam},
+            {letter: "أَخٌ", audio: dpd1},
+            {letter: "بَشَرٌ", audio: dpd2},
+            {letter: "لَقَسَمٌ", audio: dpd3},
+            {letter: "فَنُزُلٌ", audio: dpd4},
+            {letter: "حَرَجٌ", audio: dpd5},
+            {letter: "حَسَنَتٌ", audio: dpd6},
+            {letter: "مَلَكٌ", audio: dpd7},
+            {letter: "نَفَرٌ", audio: dpd8},
+            {letter: "حُمُرٌ", audio: dpd9},
+            {letter: "وَدِيَتٌ", audio: dpd10},
+            {letter: "عَسِرٌ", audio: dpd11},
+            {letter: "أُذُنٌ", audio: dpd12},
+            {letter: "خُشُبٌ", audio: dpd13},
+            {letter: "لَعِبٌ", audio: dpd14},
+            {letter: "وَلَدٌ", audio: dpd15},
+            {letter: "مَرَضٌ", audio: dpd16},
 
-            {letter: "رَقَبَةٍ", audio: zimAenLam},
-            {letter: "سُرُرٌ", audio: zimAenLam},
-            {letter: "عَمَدٍ", audio: zimAenLam},
-            {letter: "غَبَرَةٌ", audio: zimAenLam},
-            {letter: "هُدًى", audio: zimAenLam},
-            {letter: "لَهَبٍ", audio: zimAenLam},
-            {letter: "نَخِرَةً", audio: zimAenLam},
-            {letter: "وَسَطًا", audio: zimAenLam},
-            {letter: "أَبَدًا", audio: zimAenLam},
-            {letter: "طَبَقًا", audio: zimAenLam},
-            {letter: "هُمَزَةٍ", audio: zimAenLam},
-            {letter: "طُوًى", audio: zimAenLam},
+            {letter: "رَقَبَةٍ", audio: cpd1},
+            {letter: "سُرُرٌ", audio: cpd2},
+            {letter: "عَمَدٍ", audio: cpd3},
+            {letter: "غَبَرَةٌ", audio: cpd4},
+            {letter: "هُدًى", audio: cpd5},
+            {letter: "لَهَبٍ", audio: cpd6},
+            {letter: "نَخِرَةً", audio: cpd7},
+            {letter: "وَسَطًا", audio: cpd8},
+            {letter: "أَبَدًا", audio: cpd9},
+            {letter: "طَبَقًا", audio: cpd10},
+            {letter: "هُمَزَةٍ", audio: cpd11},
+            {letter: "طُوًى", audio: cpd12},
         ]
     }
 

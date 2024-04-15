@@ -4,7 +4,7 @@ path = 'D:\open-source\learn-quran\\application\\base-app\\app\\assets\\audio\ho
 for file in os.listdir(path):
     file = str(file)
     source_file = os.path.join(path, file)
-    new_name = f"kpd-" + file.replace("p.mp3", ".mp3")
+    new_name = f"cpd-" + file.replace("p.mp3", ".mp3")
     destination_file = os.path.join(path, new_name)
     os.rename(source_file, destination_file)
     file = new_name
