@@ -1,6 +1,6 @@
 import os
 
-path = 'D:\\open-source\lq\\application\\base-app\\app\\assets\\audio\\pronunciation'
+path = 'D:\\open-source\lq\\application\\base-app\\app\\assets\\audio\\pronunciation\\tmp'
 for file in os.listdir(path):
     file = str(file)
     # source_file = os.path.join(path, file)

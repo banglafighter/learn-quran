@@ -13,24 +13,26 @@ def split_audio(start_second, end_second, audio_file, export_name=None):
 
 
 data_map = [
-    {"start": 3, "end": 6},
-    {"start": 6, "end": 9},
-    {"start": 9.10, "end": 12.5},
-    {"start": 13, "end": 15.15},
-    {"start": 16, "end": 18.90},
-    {"start": 19.50, "end": 22.5},
-    {"start": 23, "end": 25.50},
-    {"start": 25.60, "end": 28.50},
-    {"start": 28.55, "end": 31.50},
-    {"start": 31.55, "end": 34.50},
-    {"start": 35, "end": 38},
-    {"start": 38, "end": 40.50},
+    {"start": 2.10, "end": 5.15},
+    {"start": 5.20, "end": 8.10},
+    {"start": 8.15, "end": 11.5},
+    {"start": 11.6, "end": 13.60},
+    {"start": 13.60, "end": 16},
+    {"start": 16, "end": 18.30},
+    {"start": 18.30, "end": 21.10},
+    {"start": 21.10, "end": 23.70},
+    {"start": 23.70, "end": 26.10},
+    {"start": 26.10, "end": 28.40},
+    {"start": 28.60, "end": 31},
+    {"start": 31, "end": 33.10},
+    {"start": 33.30, "end": 35.70},
+    {"start": 35.80, "end": 38.20},
 ]
 
 index = 1
 for data in data_map:
     start = data["start"]
     end = data["end"]
-    split_audio(start, end, "mp3_files/jobor-pronounce-diff.mp3", export_name=f"fds-{index}")
+    split_audio(start, end, "mp3_files/jer-pronounce-diff.mp3", export_name=f"kds-{index}")
     index = index + 1
 

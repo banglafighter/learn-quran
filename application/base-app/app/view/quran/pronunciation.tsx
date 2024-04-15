@@ -14,6 +14,21 @@ import fds10 from "../../assets/audio/pronunciation/fds-10.mp3"
 import fds11 from "../../assets/audio/pronunciation/fds-11.mp3"
 import fds12 from "../../assets/audio/pronunciation/fds-12.mp3"
 
+import kds1 from "../../assets/audio/pronunciation/kds-1.mp3"
+import kds2 from "../../assets/audio/pronunciation/kds-2.mp3"
+import kds3 from "../../assets/audio/pronunciation/kds-3.mp3"
+import kds4 from "../../assets/audio/pronunciation/kds-4.mp3"
+import kds5 from "../../assets/audio/pronunciation/kds-5.mp3"
+import kds6 from "../../assets/audio/pronunciation/kds-6.mp3"
+import kds7 from "../../assets/audio/pronunciation/kds-7.mp3"
+import kds8 from "../../assets/audio/pronunciation/kds-8.mp3"
+import kds9 from "../../assets/audio/pronunciation/kds-9.mp3"
+import kds10 from "../../assets/audio/pronunciation/kds-10.mp3"
+import kds11 from "../../assets/audio/pronunciation/kds-11.mp3"
+import kds12 from "../../assets/audio/pronunciation/kds-12.mp3"
+import kds13 from "../../assets/audio/pronunciation/kds-13.mp3"
+import kds14 from "../../assets/audio/pronunciation/kds-14.mp3"
+
 
 interface Props extends RapidProps {
 }
@@ -58,20 +73,20 @@ export default class Pronunciation extends RapidComponent<Props, State> {
             {letter: "ذَ ظَ", audio: fds11},
             {letter: "ءَ ىَ", audio: fds12},
 
-            {letter: "ءِ عِ", audio: alif},
-            {letter: "هِ حِ", audio: alif},
-            {letter: "كِ قِ", audio: alif},
-            {letter: "تِ طِ", audio: alif},
-            {letter: "ظِ ضِ", audio: alif},
-            {letter: "دِ ضِ", audio: alif},
-            {letter: "ذِ ظِ", audio: alif},
-            {letter: "ذِ زِ", audio: alif},
-            {letter: "زِ جِ", audio: alif},
-            {letter: "ثِ سِ", audio: alif},
-            {letter: "سِ صِ", audio: alif},
-            {letter: "ءِ ىِ", audio: alif},
-            {letter: "بِ وِ", audio: alif},
-            {letter: "ءِ وِ", audio: alif},
+            {letter: "ءِ عِ", audio: kds1},
+            {letter: "هِ حِ", audio: kds2},
+            {letter: "كِ قِ", audio: kds3},
+            {letter: "تِ طِ", audio: kds4},
+            {letter: "ظِ ضِ", audio: kds5},
+            {letter: "دِ ضِ", audio: kds6},
+            {letter: "ذِ ظِ", audio: kds7},
+            {letter: "ذِ زِ", audio: kds8},
+            {letter: "زِ جِ", audio: kds9},
+            {letter: "تِ سِ", audio: kds10},
+            {letter: "سِ صِ", audio: kds11},
+            {letter: "ءِ ىِ", audio: kds12},
+            {letter: "بِ وِ", audio: kds13},
+            {letter: "ءِ وِ", audio: kds14},
 
             {letter: "ءُ عُ", audio: alif},
             {letter: "هُ حُ", audio: alif},
