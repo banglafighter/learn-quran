@@ -13,6 +13,7 @@ const Qalqalah = React.lazy(() => import('./qalqalah'));
 const Shaddah = React.lazy(() => import('./shaddah'));
 const Madd = React.lazy(() => import('./madd'));
 const Pronunciation = React.lazy(() => import('./pronunciation'));
+const SukoonPractice = React.lazy(() => import('./sukoon-practice'));
 
 const UI_BASE_URL = "/quran"
 
@@ -32,6 +33,7 @@ export default class QuranUrlMapping {
         horkotPractice: UI_BASE_URL + "/horkot-practice",
         shortPhrases: UI_BASE_URL + "/short-phrases",
         sukoon: UI_BASE_URL + "/sukoon",
+        sukoonPractice: UI_BASE_URL + "/sukoon-practice",
         qalqalah: UI_BASE_URL + "/qalqalah",
         shaddah: UI_BASE_URL + "/shaddah",
         madd: UI_BASE_URL + "/madd",
@@ -50,6 +52,7 @@ export default class QuranUrlMapping {
         publicLayoutInfo.addPageInstance(this.ui.horkotPractice, HorkotPracticeView);
         publicLayoutInfo.addPageInstance(this.ui.shortPhrases, ShortPhrases);
         publicLayoutInfo.addPageInstance(this.ui.sukoon, Sukoon);
+        publicLayoutInfo.addPageInstance(this.ui.sukoonPractice, SukoonPractice);
         publicLayoutInfo.addPageInstance(this.ui.qalqalah, Qalqalah);
         publicLayoutInfo.addPageInstance(this.ui.shaddah, Shaddah);
         publicLayoutInfo.addPageInstance(this.ui.madd, Madd);

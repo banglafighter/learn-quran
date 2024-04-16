@@ -45,7 +45,7 @@ class State extends RapidComponentState {
     payAllButtonLabel: any = "Play All"
 }
 
-export default class Sukoon extends RapidComponent<Props, State> {
+export default class SukoonPractice extends RapidComponent<Props, State> {
 
     state: State = new State();
     static contextType = RapidAppContext

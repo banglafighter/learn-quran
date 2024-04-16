@@ -3,9 +3,6 @@ import AppBootstrap from "../common/AppBootstrap";
 import {Column, Container, Row} from "react-rapid-bootstrap";
 import ExampleUrlMapping from "../example/example-url-mapping";
 import QuranUrlMapping from "../quran/quran-url-mapping";
-import Sukoon from "../quran/sukoon";
-import Madd from "../quran/madd";
-import Pronunciation from "../quran/pronunciation";
 
 
 interface Props {
@@ -29,6 +26,7 @@ export default class PublicLayout extends RapidReactComponent<Props, any> {
             {name: "Pronunciation", url: QuranUrlMapping.ui.pronunciation},
             {name: "Horkot Practice", url: QuranUrlMapping.ui.horkotPractice},
             {name: "Sukoon", url: QuranUrlMapping.ui.sukoon},
+            {name: "Sukoon Practice", url: QuranUrlMapping.ui.sukoonPractice},
             {name: "Qalqalah", url: QuranUrlMapping.ui.qalqalah},
             {name: "Shaddah", url: QuranUrlMapping.ui.shaddah},
             {name: "Madd", url: QuranUrlMapping.ui.madd},
