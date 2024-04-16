@@ -129,7 +129,7 @@ export default class TypeView extends RapidComponent<Props, State> {
 
     getKeyboardKeyMapping() {
         return(
-            <Table >
+            <Table variant={"bordered"}>
                 <TableHead>
                     <TableRow>
                         <TableCell>Arabic</TableCell>
