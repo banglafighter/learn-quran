@@ -13,26 +13,26 @@ def split_audio(start_second, end_second, audio_file, export_name=None):
 
 
 data_map = [
-    {"start": 2.10, "end": 5.15},
-    {"start": 5.20, "end": 8.10},
-    {"start": 8.15, "end": 11.5},
-    {"start": 11.6, "end": 13.60},
-    {"start": 13.60, "end": 16},
-    {"start": 16, "end": 18.30},
-    {"start": 18.30, "end": 21.10},
-    {"start": 21.10, "end": 23.70},
-    {"start": 23.70, "end": 26.10},
-    {"start": 26.10, "end": 28.40},
-    {"start": 28.60, "end": 31},
-    {"start": 31, "end": 33.10},
-    {"start": 33.30, "end": 35.70},
-    {"start": 35.80, "end": 38.20},
+    {"start": 2.40, "end": 5.10},
+    {"start": 5.40, "end": 7.80},
+    {"start": 7.90, "end": 10.30},
+    {"start": 10.50, "end": 12.80},
+    {"start": 12.85, "end": 15.50},
+    {"start": 15.55, "end": 18.50},
+    {"start": 18.55, "end": 21.05}, # 7
+    {"start": 21.15, "end": 24.10},
+    {"start": 24.10, "end": 26.60}, #9
+    {"start": 26.70, "end": 29.50},
+    {"start": 29.55, "end": 32.40},
+    {"start": 32.45, "end": 34.65},
+    {"start": 34.80, "end": 37.20},
+    {"start": 37.50, "end": 39.50},
 ]
 
 index = 1
 for data in data_map:
     start = data["start"]
     end = data["end"]
-    split_audio(start, end, "mp3_files/jer-pronounce-diff.mp3", export_name=f"kds-{index}")
+    split_audio(start, end, "mp3_files/pesh-pronounce-diff.mp3", export_name=f"dds-{index}")
     index = index + 1
 
