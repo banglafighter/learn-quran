@@ -6,7 +6,7 @@ import {
     RapidComponentState,
     RapidProps
 } from "react-rapid-app";
-import {Column, Row, TextField} from "react-rapid-bootstrap";
+import {Column, Row, Table, TableBody, TableCell, TableHead, TableRow, TextField} from "react-rapid-bootstrap";
 import React from "react";
 import "./../../assets/css/keyboard.css"
 
@@ -127,6 +127,133 @@ export default class TypeView extends RapidComponent<Props, State> {
         )
     }
 
+    getKeyboardKeyMapping() {
+        return(
+            <Table >
+                <TableHead>
+                    <TableRow>
+                        <TableCell>Arabic</TableCell>
+                        <TableCell>Key</TableCell>
+                        <TableCell>Arabic</TableCell>
+                        <TableCell>Key</TableCell>
+                        <TableCell>Arabic</TableCell>
+                        <TableCell>Key</TableCell>
+                        <TableCell>Arabic</TableCell>
+                        <TableCell>Key</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ا</TableCell><TableCell>A</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ط</TableCell><TableCell>Shift + T</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ة</TableCell><TableCell>Q</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ٳ</TableCell><TableCell>U</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ب</TableCell><TableCell>B</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ظ</TableCell><TableCell>Shift + Z</TableCell>
+                        <TableCell className={"arabic-font-tr"}>۝</TableCell><TableCell>Shift + Q</TableCell>
+                        <TableCell className={"arabic-font-tr"}>أ</TableCell><TableCell>Shift + U</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ت</TableCell><TableCell>T</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ع</TableCell><TableCell>Y</TableCell>
+                        <TableCell className={"arabic-font-tr"}>َ</TableCell><TableCell>V</TableCell>
+                        <TableCell className={"arabic-font-tr"}>آ</TableCell><TableCell>Shift + E</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ث</TableCell><TableCell>C</TableCell>
+                        <TableCell className={"arabic-font-tr"}>غ</TableCell><TableCell>G</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ً</TableCell><TableCell>Shift + V</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ئ</TableCell><TableCell>Shift + I</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ج</TableCell><TableCell>J</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ف</TableCell><TableCell>F</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ِ</TableCell><TableCell>W</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ح</TableCell><TableCell>H</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ق</TableCell><TableCell>K</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ٍ</TableCell><TableCell>Shift + W</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>خ</TableCell><TableCell>X</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ك</TableCell><TableCell>Shift + K</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ُ</TableCell><TableCell>P</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>د</TableCell><TableCell>D</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ل</TableCell><TableCell>L</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ٌ</TableCell><TableCell>Shift + P</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ذ</TableCell><TableCell>Shift + J</TableCell>
+                        <TableCell className={"arabic-font-tr"}>م</TableCell><TableCell>M</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ٰ</TableCell><TableCell>Shift + B</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ر</TableCell><TableCell>R</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ن</TableCell><TableCell>N</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ٖ</TableCell><TableCell>Shift + N</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ز</TableCell><TableCell>Z</TableCell>
+                        <TableCell className={"arabic-font-tr"}>و</TableCell><TableCell>O</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ٗ</TableCell><TableCell>Shift + M</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>س</TableCell><TableCell>S</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ه</TableCell><TableCell>Shift + H</TableCell>
+                        <TableCell className={"arabic-font-tr"}> ْ</TableCell><TableCell>Shift + L</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ش</TableCell><TableCell>Shift + S</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ء</TableCell><TableCell>Shift + A</TableCell>
+                        <TableCell className={"arabic-font-tr"}> ٓ</TableCell><TableCell>Shift + G</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ص</TableCell><TableCell>Shift + C</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ي</TableCell><TableCell>I</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className={"arabic-font-tr"}>ض</TableCell><TableCell>Shift + D</TableCell>
+                        <TableCell className={"arabic-font-tr"}>ى</TableCell><TableCell>E</TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                        <TableCell className={"arabic-font-tr"}></TableCell><TableCell></TableCell>
+                    </TableRow>
+
+                </TableBody>
+            </Table>
+        )
+    }
+
     renderUI() {
         const _this = this;
         return (
@@ -135,6 +262,7 @@ export default class TypeView extends RapidComponent<Props, State> {
                     {this.getKeyboardView()}
                 </Column>
                 <TextField {...this.setupFieldAttrs("type")} addWrapperClass={"col-md-12"}/>
+                {_this.getKeyboardKeyMapping()}
                 <TextField {...this.setupFieldAttrs("jsKeyboard")} addWrapperClass={"col-md-12"}/>
             </Row>
         )

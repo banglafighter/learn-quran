@@ -58,3 +58,8 @@
     font-size: 38px;
     direction: rtl;
 }
+
+.arabic-font-tr {
+    font-size: 40px;
+    font-family: 'AlQalamQuranMajeed2', sans-serif;
+}
