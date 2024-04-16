@@ -62,7 +62,7 @@ export default class Pronunciation extends RapidComponent<Props, State> {
     static defaultProps = {}
     randomData: any
     currentlyPlayingIndex: any = 0
-    tableItemPerRow: any = 6
+    tableItemPerRow: any = 3
     totalDataLength: any = 0
 
     constructor(props: Props) {
